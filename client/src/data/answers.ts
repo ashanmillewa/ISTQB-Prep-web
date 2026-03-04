@@ -150,6 +150,61 @@ export const answersData: Record<string, AnswerData[]> = {
       questionId: 29,
       correctAnswer: 1,
       explanation: "Test automation supports testing activities using tools."
+    },
+    {
+      questionId: 30,
+      correctAnswer: 2,
+      explanation: "Exit criteria define when testing can stop; reaching target defect density and having regression tests automated are valid exit criteria. (Note: Multi-select not fully supported in current UI, but c is correct)."
+    },
+    {
+      questionId: 31,
+      correctAnswer: 3,
+      explanation: "Using three-point estimation (PERT), the calculated estimate rounds to 10 person-hours."
+    },
+    {
+      questionId: 32,
+      correctAnswer: 0,
+      explanation: "The highest priority test case whose dependencies are satisfied should be executed first."
+    },
+    {
+      questionId: 33,
+      correctAnswer: 0,
+      explanation: "Each test category aligns with the quadrant based on business vs technology focus and critique vs support."
+    },
+    {
+      questionId: 34,
+      correctAnswer: 2,
+      explanation: "Performance testing and user testing are actions that reduce the likelihood or impact of the risk."
+    },
+    {
+      questionId: 35,
+      correctAnswer: 3,
+      explanation: "A burndown chart visualizes completed work and remaining work over time."
+    },
+    {
+      questionId: 36,
+      correctAnswer: 2,
+      explanation: "Configuration management controls versions and changes to testware."
+    },
+    {
+      questionId: 37,
+      correctAnswer: 2,
+      explanation: "If developers cannot reproduce the issue, reproducibility information is insufficient."
+    },
+    {
+      questionId: 38,
+      correctAnswer: 2,
+      explanation: "Data preparation tools support creating and managing test data during design and implementation."
+    },
+    {
+      questionId: 39,
+      correctAnswer: 1,
+      explanation: "Automation requires ongoing maintenance; insufficient effort is a common risk."
+    },
+    {
+      questionId: 40,
+      correctAnswer: 2,
+      explanation: "Automation improves the consistency of test execution by following the same steps every time."
     }
   ]
 };

@@ -1,0 +1,357 @@
+[
+  {
+    "question": "Which of the following statements describe a valid test objective?",
+    "answer_a": "To prove that there are no unfixed defects in the system under test",
+    "answer_b": "To prove that there will be no failures after the implementation of the system into production",
+    "answer_c": "To reduce the risk level of the test object and to build confidence in the quality level",
+    "answer_d": "To verify that there are no untested combinations of inputs",
+    "correct_answer": "c",
+    "clarification": "Testing reduces risk and builds confidence; it cannot prove absence of defects or failures."
+  },
+  {
+    "question": "Which of the following options shows an example of test activities that contribute to success?",
+    "answer_a": "Having testers involved during various software development lifecycle (SDLC) activities will help to detect defects in work products",
+    "answer_b": "Testers try not to disturb the developers while coding, so that the developers write better code",
+    "answer_c": "Testers collaborating with end users help to improve the quality of defect reports during component integration and system testing",
+    "answer_d": "Certified testers will design much better test cases than non-certified testers",
+    "correct_answer": "a",
+    "clarification": "Early tester involvement across the SDLC improves defect detection and overall quality."
+  },
+  {
+    "question": "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. Which testing principle explains your skepticism?",
+    "answer_a": "Tests wear out",
+    "answer_b": "Absence-of-defects fallacy",
+    "answer_c": "Defects cluster together",
+    "answer_d": "Exhaustive testing is impossible",
+    "correct_answer": "a",
+    "clarification": "Unchanged tests may stop detecting defects over time, even when defects still exist."
+  },
+  {
+    "question": "You work in a team that develops a mobile application for food ordering. In the current iteration the team decided to implement the payment functionality. Which of the following activities is a part of test analysis?",
+    "answer_a": "Estimating that testing the integration with the payment service will take 8 person-days",
+    "answer_b": "Deciding that the team should test if it is possible to properly share payment between many users",
+    "answer_c": "Using boundary value analysis (BVA) to derive the test data for the test cases that check the correct payment processing for the minimum allowed amount to be paid",
+    "answer_d": "Analyzing the discrepancy between the actual result and expected result after executing a test case that checks the process of payment with a credit card, and reporting a defect",
+    "correct_answer": "b",
+    "clarification": "Test analysis focuses on deciding what should be tested."
+  }
+,
+  {
+    "question": "Which of the following factors have a SIGNIFICANT influence on the test approach?",
+    "answer_a": "i and ii",
+    "answer_b": "i, ii and iii",
+    "answer_c": "ii and iii",
+    "answer_d": "i, iii and iv",
+    "correct_answer": "b",
+    "clarification": "The SDLC, level of risk, and regulatory requirements significantly influence the test approach."
+  },
+  {
+    "question": "Which of the following statements BEST describes the relationship between testing and debugging?",
+    "answer_a": "Testing and debugging are the same activity",
+    "answer_b": "Testing is the process of finding defects, while debugging is the process of analyzing and fixing them",
+    "answer_c": "Debugging identifies failures, and testing fixes them",
+    "answer_d": "Testing is only done after debugging is completed",
+    "correct_answer": "b",
+    "clarification": "Testing finds defects and failures; debugging is used to locate and fix the causes."
+  },
+  {
+    "question": "Which of the following is a reason why exhaustive testing is impossible?",
+    "answer_a": "Time and budget are unlimited",
+    "answer_b": "All combinations of inputs and preconditions cannot be tested",
+    "answer_c": "Developers fix defects before testing starts",
+    "answer_d": "Testing tools cannot be used",
+    "correct_answer": "b",
+    "clarification": "The number of possible combinations is too large to test exhaustively."
+  },
+  {
+    "question": "Which of the following is an example of a failure?",
+    "answer_a": "An incorrect variable declaration in the code",
+    "answer_b": "A defect found during a code review",
+    "answer_c": "The system crashes when a user saves a file",
+    "answer_d": "An error made by a developer",
+    "correct_answer": "c",
+    "clarification": "A failure is the observed incorrect behavior of the system during execution."
+  },
+  {
+    "question": "Which of the following BEST describes acceptance test-driven development (ATDD)?",
+    "answer_a": "Acceptance criteria are created using the given/when/then format",
+    "answer_b": "Test cases are created at component level and are code-oriented",
+    "answer_c": "Tests are created based on acceptance criteria to drive the development of the software",
+    "answer_d": "Tests are based on desired behavior to improve understanding",
+    "correct_answer": "c",
+    "clarification": "ATDD uses acceptance criteria to create tests that guide development."
+  },
+  {
+    "question": "Which of the following is NOT an example of the shift-left approach?",
+    "answer_a": "Reviewing user requirements before acceptance",
+    "answer_b": "Writing a component test before the corresponding code is written",
+    "answer_c": "Executing a performance efficiency test for a component during component testing",
+    "answer_d": "Writing a test script before setting up configuration management",
+    "correct_answer": "c",
+    "clarification": "Performance efficiency testing is not typically a shift-left activity."
+  },
+  {
+    "question": "Which argument BEST supports organizing retrospectives at the end of each release cycle?",
+    "answer_a": "They are popular and clients like them",
+    "answer_b": "They save money by avoiding user feedback",
+    "answer_c": "They help identify process weaknesses for continuous improvement",
+    "answer_d": "They promote values like courage and respect",
+    "correct_answer": "c",
+    "clarification": "Retrospectives enable analysis of process issues and support continuous improvement."
+  },
+  {
+    "question": "Which types of failures fit which test levels BEST?",
+    "answer_a": "1D, 2B, 3A, 4C",
+    "answer_b": "1D, 2B, 3C, 4A",
+    "answer_c": "1B, 2A, 3D, 4C",
+    "answer_d": "1C, 2B, 3A, 4D",
+    "correct_answer": "d",
+    "clarification": "Different failure types align best with specific test levels based on scope."
+  },
+  {
+    "question": "Which statement about regression testing is CORRECT?",
+    "answer_a": "It confirms that defects have been fixed",
+    "answer_b": "It checks that changes have not caused unintended side effects",
+    "answer_c": "It is only performed after system testing",
+    "answer_d": "It is unnecessary if no defects are found",
+    "correct_answer": "b",
+    "clarification": "Regression testing ensures changes have not negatively impacted existing functionality."
+  },
+  {
+    "question": "Which of the following BEST describes confirmation testing?",
+    "answer_a": "Testing to ensure defects are fixed",
+    "answer_b": "Testing to find new defects",
+    "answer_c": "Testing to measure system performance",
+    "answer_d": "Testing without requirements",
+    "correct_answer": "a",
+    "clarification": "Confirmation testing verifies that a specific defect has been successfully fixed."
+  }
+,
+  {
+    "question": "Which of the following BEST describes the relationship between errors, defects, and failures?",
+    "answer_a": "Errors cause failures which result in defects",
+    "answer_b": "Defects cause errors which result in failures",
+    "answer_c": "Errors may lead to defects which may cause failures",
+    "answer_d": "Failures cause defects which lead to errors",
+    "correct_answer": "c",
+    "clarification": "Human errors can introduce defects in code, which may later cause failures during execution."
+  },
+  {
+    "question": "Which of the following statements about static testing is CORRECT?",
+    "answer_a": "Static testing requires executing the code",
+    "answer_b": "Static testing can find defects early in the lifecycle",
+    "answer_c": "Static testing can only be performed by developers",
+    "answer_d": "Static testing replaces dynamic testing",
+    "correct_answer": "b",
+    "clarification": "Static testing (e.g., reviews) can identify defects without executing the code."
+  },
+  {
+    "question": "Which of the following is MOST likely to be detected by static testing?",
+    "answer_a": "Performance bottlenecks",
+    "answer_b": "Incorrect business logic during execution",
+    "answer_c": "Missing requirements",
+    "answer_d": "Runtime memory leaks",
+    "correct_answer": "c",
+    "clarification": "Reviews can identify missing or unclear requirements early."
+  },
+  {
+    "question": "Which of the following BEST describes the purpose of a walkthrough?",
+    "answer_a": "To find as many defects as possible",
+    "answer_b": "To evaluate work products and educate participants",
+    "answer_c": "To formally approve documents",
+    "answer_d": "To replace inspections",
+    "correct_answer": "b",
+    "clarification": "Walkthroughs are informal reviews aimed at understanding and learning."
+  },
+  {
+    "question": "Which review role is responsible for ensuring that the review process is followed?",
+    "answer_a": "Author",
+    "answer_b": "Moderator",
+    "answer_c": "Reviewer",
+    "answer_d": "Manager",
+    "correct_answer": "b",
+    "clarification": "The moderator facilitates the review and ensures adherence to the process."
+  },
+  {
+    "question": "Which of the following is a benefit of early and frequent stakeholder feedback?",
+    "answer_a": "Reduced need for documentation",
+    "answer_b": "Earlier detection of misunderstandings",
+    "answer_c": "Elimination of regression testing",
+    "answer_d": "Reduced need for skilled testers",
+    "correct_answer": "b",
+    "clarification": "Early feedback helps uncover misunderstandings before they become costly defects."
+  },
+  {
+    "question": "Which test level focuses on verifying the complete, integrated system against requirements?",
+    "answer_a": "Component testing",
+    "answer_b": "Component integration testing",
+    "answer_c": "System testing",
+    "answer_d": "Acceptance testing",
+    "correct_answer": "c",
+    "clarification": "System testing evaluates the full system against specified requirements."
+  },
+  {
+    "question": "Which of the following BEST describes acceptance testing?",
+    "answer_a": "Testing performed by developers",
+    "answer_b": "Testing to verify system behavior against business needs",
+    "answer_c": "Testing individual components",
+    "answer_d": "Testing interfaces between components",
+    "correct_answer": "b",
+    "clarification": "Acceptance testing ensures the system meets user and business requirements."
+  },
+  {
+    "question": "Which of the following is an example of functional testing?",
+    "answer_a": "Usability testing",
+    "answer_b": "Performance testing",
+    "answer_c": "Security testing",
+    "answer_d": "Testing a calculation according to business rules",
+    "correct_answer": "d",
+    "clarification": "Functional testing verifies system functions against requirements."
+  },
+  {
+    "question": "Which of the following BEST describes non-functional testing?",
+    "answer_a": "Testing system behavior under normal conditions",
+    "answer_b": "Testing features described in requirements",
+    "answer_c": "Testing quality characteristics such as performance and usability",
+    "answer_d": "Testing individual code units",
+    "correct_answer": "c",
+    "clarification": "Non-functional testing focuses on quality attributes beyond functionality."
+  },
+  {
+    "question": "Which of the following is an example of black-box testing?",
+    "answer_a": "Statement coverage",
+    "answer_b": "Decision coverage",
+    "answer_c": "Equivalence partitioning",
+    "answer_d": "Code inspection",
+    "correct_answer": "c",
+    "clarification": "Black-box techniques derive tests from requirements, not code structure."
+  },
+  {
+    "question": "Which of the following BEST describes white-box testing?",
+    "answer_a": "Testing based on system requirements",
+    "answer_b": "Testing based on internal structure of the code",
+    "answer_c": "Testing without knowing implementation",
+    "answer_d": "Testing performed by users",
+    "correct_answer": "b",
+    "clarification": "White-box testing uses knowledge of the internal code structure."
+  },
+  {
+    "question": "Which of the following test techniques is MOST suitable for testing boundary values?",
+    "answer_a": "Equivalence partitioning",
+    "answer_b": "Decision table testing",
+    "answer_c": "Boundary value analysis",
+    "answer_d": "State transition testing",
+    "correct_answer": "c",
+    "clarification": "Boundary value analysis focuses on values at the edges of partitions."
+  },
+  {
+    "question": "Which of the following is an example of exploratory testing?",
+    "answer_a": "Executing predefined test cases",
+    "answer_b": "Simultaneous learning, test design, and execution",
+    "answer_c": "Testing only after documentation is complete",
+    "answer_d": "Automated regression testing",
+    "correct_answer": "b",
+    "clarification": "Exploratory testing combines learning, design, and execution."
+  },
+  {
+    "question": "Which of the following BEST describes test automation?",
+    "answer_a": "Replacing all manual testing",
+    "answer_b": "Using tools to support test activities",
+    "answer_c": "Testing without human involvement",
+    "answer_d": "Only executing tests automatically",
+    "correct_answer": "b",
+    "clarification": "Test automation supports testing activities using tools."
+  }
+,
+  {
+    "question": "Which TWO of the following options are the exit criteria for testing a system?",
+    "answer_a": "Test environment readiness",
+    "answer_b": "The ability to log in to the test object by the tester",
+    "answer_c": "Estimated defect density is reached",
+    "answer_d": "Requirements are translated into given/when/then format",
+    "answer_e": "Regression tests are automated",
+    "correct_answer": "c, e",
+    "clarification": "Exit criteria define when testing can stop; reaching target defect density and having regression tests automated are valid exit criteria."
+  },
+  {
+    "question": "Your team uses the three-point estimation technique to estimate the test effort for a new high-risk feature. The following estimates were made: Most optimistic estimation: 2 person-hours; Most likely estimation: 11 person-hours; Most pessimistic estimation: 14 person-hours. What is the final estimate?",
+    "answer_a": "9 person-hours",
+    "answer_b": "14 person-hours",
+    "answer_c": "11 person-hours",
+    "answer_d": "10 person-hours",
+    "correct_answer": "d",
+    "clarification": "Using three-point estimation (PERT), the calculated estimate rounds to 10 person-hours."
+  },
+  {
+    "question": "You are testing a mobile application that allows users to find a nearby restaurant based on the type of food they want to eat. Consider the following list of test cases, priorities, and dependencies. Which test case should be executed first?",
+    "answer_a": "TC 003",
+    "answer_b": "TC 002",
+    "answer_c": "TC 001",
+    "answer_d": "TC 004",
+    "correct_answer": "a",
+    "clarification": "The highest priority test case whose dependencies are satisfied should be executed first."
+  },
+  {
+    "question": "Consider the following test categories (1-4) and agile testing quadrants (A-D). How do the following test categories map onto the agile testing quadrants?",
+    "answer_a": "1C, 2A, 3B, 4D",
+    "answer_b": "1D, 2A, 3C, 4B",
+    "answer_c": "1C, 2B, 3D, 4A",
+    "answer_d": "1D, 2B, 3C, 4A",
+    "correct_answer": "a",
+    "clarification": "Each test category aligns with the quadrant based on business vs technology focus and critique vs support."
+  },
+  {
+    "question": "During a risk analysis the following risk was identified and assessed. What measure is proposed to be taken in response to this analyzed risk?",
+    "answer_a": "Risk acceptance",
+    "answer_b": "Contingency plan",
+    "answer_c": "Risk mitigation",
+    "answer_d": "Risk transfer",
+    "correct_answer": "c",
+    "clarification": "Performance testing and user testing are actions that reduce the likelihood or impact of the risk."
+  },
+  {
+    "question": "Which work product can be used by an agile team to show the amount of work that has been completed and the amount of total work remaining for a given iteration?",
+    "answer_a": "Acceptance criteria",
+    "answer_b": "Defect report",
+    "answer_c": "Test completion report",
+    "answer_d": "Burndown chart",
+    "correct_answer": "d",
+    "clarification": "A burndown chart visualizes completed work and remaining work over time."
+  },
+  {
+    "question": "You need to update one of the automated test scripts to be in line with a new requirement. Which process indicates that you create a new version of the test script in the test repository?",
+    "answer_a": "Traceability management",
+    "answer_b": "Maintenance testing",
+    "answer_c": "Configuration management",
+    "answer_d": "Requirements engineering",
+    "correct_answer": "c",
+    "clarification": "Configuration management controls versions and changes to testware."
+  },
+  {
+    "question": "You received the following defect report from the developers stating that the anomaly described in this test report is not reproducible. Which quality characteristic of a good defect report is MOST clearly missing?",
+    "answer_a": "Accuracy",
+    "answer_b": "Completeness",
+    "answer_c": "Reproducibility",
+    "answer_d": "Objectivity",
+    "correct_answer": "c",
+    "clarification": "If developers cannot reproduce the issue, reproducibility information is insufficient."
+  },
+  {
+    "question": "Which test activity does a data preparation tool support?",
+    "answer_a": "Test monitoring and test control",
+    "answer_b": "Test analysis",
+    "answer_c": "Test design and test implementation",
+    "answer_d": "Test completion",
+    "correct_answer": "c",
+    "clarification": "Data preparation tools support creating and managing test data during design and implementation."
+  },
+  {
+    "question": "Which item correctly identifies a potential risk of performing test automation?",
+    "answer_a": "It may introduce unknown regressions in production",
+    "answer_b": "Sufficient efforts to maintain testware may not be properly allocated",
+    "answer_c": "Testing tools and associated testware may not be sufficiently relied upon",
+    "answer_d": "It may reduce the time allocated for manual testing",
+    "correct_answer": "b",
+    "clarification": "Automation requires ongoing maintenance; insufficient effort is a common risk."
+  }
+]
