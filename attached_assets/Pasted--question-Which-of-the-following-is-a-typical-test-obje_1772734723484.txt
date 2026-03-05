@@ -1,0 +1,362 @@
+[
+  {
+    "question": "Which of the following is a typical test objective?",
+    "answer_a": "Validating that documented requirements are met",
+    "answer_b": "Causing failures and identifying defects",
+    "answer_c": "Initiating errors and identifying root causes",
+    "answer_d": "Verifying the test object meets user expectations",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following statements BEST describes the difference between testing and debugging?",
+    "answer_a": "Testing causes failures while debugging fixes failures",
+    "answer_b": "Testing is a negative activity while debugging is a positive activity",
+    "answer_c": "Testing determines that defects exist while debugging removes defects",
+    "answer_d": "Testing finds the cause of defects while debugging fixes the cause of defects",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "The \u2018absence-of-defects fallacy\u2019 is one of the principles of testing. Which of the following is an\nexample of addressing this principle in practice?",
+    "answer_a": "Explaining that it is not possible for testing to show the absence of defects",
+    "answer_b": "Supporting the end users to perform acceptance testing",
+    "answer_c": "Ensuring that no implementation defects remain in the delivered system",
+    "answer_d": "Modifying tests that cause no failures to ensure few defects remain",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following test activities are MOST likely to involve the application of boundary value\nanalysis and equivalence partitioning?",
+    "answer_a": "Test implementation",
+    "answer_b": "Test design",
+    "answer_c": "Test execution",
+    "answer_d": "Test monitoring",
+    "correct_answer": "b,e",
+    "clarification": ""
+  },
+  {
+    "question": "Given the following testware:\n1. Coverage items\n2. Change requests\n3. Test execution schedule\n4. Prioritized test conditions\nAnd the following test activities\nA. Test analysis\nB. Test design\nC. Test implementation\nD. Test completion\nWhich of the following BEST shows the testware produced by the activities?",
+    "answer_a": "1B, 2D, 3C, 4A",
+    "answer_b": "1B, 2D, 3A, 4C",
+    "answer_c": "1D, 2C, 3A, 4B",
+    "answer_d": "1D, 2C, 3B, 4A",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following statements about the different testing roles is MOST likely to be\nCORRECT?",
+    "answer_a": "In Agile software development, the test management role is the primary responsibility of the",
+    "answer_b": "The testing role is primarily responsible for test monitoring and test control, while the test",
+    "answer_c": "In Agile software development, test management activities that span multiple teams are",
+    "answer_d": "The test management role is primarily responsible for test analysis and test design, while",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is an advantage of the whole-team approach?",
+    "answer_a": "Teams with no testers",
+    "answer_b": "Improved team dynamics",
+    "answer_c": "Specialist team members",
+    "answer_d": "Larger team sizes",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following statements about the independence of testing is CORRECT?",
+    "answer_a": "Independent testers will find defects due to their different technical perspective from",
+    "answer_b": "Developers\u2019 familiarity with their own code means they only find a few defects in it, however",
+    "answer_c": "Independent testing requires testers who are outside the developer\u2019s team and ideally from",
+    "answer_d": "Testers from outside the developer\u2019s team are more independent than testers from within",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is a good testing practice that applies to all software development lifecycles?",
+    "answer_a": "For each test level, there is a corresponding development level",
+    "answer_b": "For each test objective, there is a corresponding development objective",
+    "answer_c": "For every test activity, there is a corresponding user activity",
+    "answer_d": "For every development activity, there is a corresponding test activity",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is an example of a test-first approach to development?",
+    "answer_a": "Component Test-Driven Development",
+    "answer_b": "Integration Test-Driven Development",
+    "answer_c": "System Test-Driven Development",
+    "answer_d": "Acceptance Test-Driven Development",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following provides the BEST description of shift-left?",
+    "answer_a": "When agreed by the developers, manual activities on the left-hand side of the test process",
+    "answer_b": "Where cost-effective, test activities are moved earlier in the software development lifecycle",
+    "answer_c": "When they have spare time available, testers are required to automate tests for regression",
+    "answer_d": "When available, testers are trained to perform tasks early in the SDLC to allow more test",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is LEAST likely to occur as a result of a retrospective?",
+    "answer_a": "The quality of future test objects improves by identifying improvements in development",
+    "answer_b": "Test efficiency improves by speeding up the configuration of test environments through",
+    "answer_c": "End users\u2019 understanding of the development and test processes is improved",
+    "answer_d": "Automated test scripts are enhanced through feedback from developers",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following test levels is MOST likely being performed if the testing is focused on\nvalidation and is not being performed by testers?",
+    "answer_a": "Component testing",
+    "answer_b": "Component integration testing",
+    "answer_c": "System integration testing",
+    "answer_d": "Acceptance testing",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "The navigation system software has been updated due to it suggesting routes that break traffic\nlaws, such as driving the wrong way down one-way streets. Which of the following BEST describes\nthe testing that will be performed?",
+    "answer_a": "Only confirmation testing",
+    "answer_b": "Confirmation testing then regression testing",
+    "answer_c": "Only regression testing",
+    "answer_d": "Regression testing then confirmation testing",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Given the following example defects:\ni. Two different parts of the design specification disagree due to the complexity of the\ndesign\nii. A response time is too long and so makes users lose patience\niii. A path in the code cannot be reached during execution\niv. A variable is declared but never subsequently used in the program\nv. The amount of memory needed by the program to generate a report is too high\nWhich of the following BEST identifies example defects that could be found by static testing (rather\nthan dynamic testing)?",
+    "answer_a": "ii, v",
+    "answer_b": "iii, v",
+    "answer_c": "i, ii, iv",
+    "answer_d": "i, iii, iv",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is a benefit of early and frequent stakeholder feedback?",
+    "answer_a": "Changes to requirements are understood and implemented earlier",
+    "answer_b": "It ensures business stakeholders understand user requirements",
+    "answer_c": "It allows product owners to change their requirements as often as they want",
+    "answer_d": "End users are told which requirements will not be implemented prior to release",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "Given the following review types:\n1. Technical review\n2. Informal review\n3. Inspection\n4. Walkthrough\nAnd the following descriptions:\nA. Includes objectives such as gaining consensus, generating new ideas, and\nmotivating authors to improve\nB. Includes objectives such as educating reviewers, gaining consensus, generating\nnew ideas and detecting potential defects\nC. The main objective is detecting potential defects and it requires metrics collection to\nsupport process improvement\nD. The main objective is detecting potential defects and it generates no formal\ndocumented output\nWhich of the following BEST matches the review types and the descriptions?",
+    "answer_a": "1A, 2B, 3C, 4D",
+    "answer_b": "1A, 2D, 3C, 4B",
+    "answer_c": "1B, 2C, 3D, 4A",
+    "answer_d": "1C, 2D, 3A, 4B",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is a factor that contributes to a successful review?",
+    "answer_a": "Ensure management participate as reviewers",
+    "answer_b": "Split large work products into smaller parts",
+    "answer_c": "Set reviewer evaluation as an objective",
+    "answer_d": "Plan to cover one document per review",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "What is the MAIN difference between black-box test techniques and experience-based test\ntechniques?",
+    "answer_a": "The test object",
+    "answer_b": "The test level at which the test technique is used",
+    "answer_c": "The test basis",
+    "answer_d": "The software development lifecycle (SDLC) in which the test technique can be used",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "You are testing a PIN validator, which accepts valid PINs and rejects invalid PINs. A PIN is a\nsequence of digits. A PIN is valid if it consists of four digits, which are not all the same digit. You\nhave identified the following valid equivalence partitions:\nVariable: PIN code length\n\u2022 The partition \u201clength correct\u201d - four-digit PINs\n\u2022 The partition \u201clength incorrect\u201d - PINs with length other than 4\nVariable: Number of different digits\n\u2022 The partition \u201cnumber of different digits correct\u201d - PINs with at least two different digits\n\u2022 The partition \u201cnumber of different digits incorrect\u201d - PINs with all digits being the same\nWhich of the following is the BEST set of input test data to cover the identified equivalence\npartitions?",
+    "answer_a": "12, 1111, 1234, 12345",
+    "answer_b": "1, 123, 1111, 1234",
+    "answer_c": "11, 12, 1111, 12345",
+    "answer_d": "123, 1222, 12345",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "A developer was asked to implement the following business rule:\nINPUT: value (integer number)\nIF (value \u2264 100 OR value \u2265 200) THEN write \u201cvalue incorrect\u201d\nELSE write \u201cvalue OK\u201d\nYou design the test cases using 2-value boundary value analysis.\nWhich of the following sets of test inputs achieves the greatest coverage?",
+    "answer_a": "100, 150, 200, 201",
+    "answer_b": "99, 100, 200, 201",
+    "answer_c": "98, 99, 100, 101",
+    "answer_d": "101, 150, 199, 200",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "You are working on a project to develop a system to analyze driving test results. You have been\nasked to design test cases based on the following decision table.\nR1 R2 R3\nC1: First attempt at the exam? - - F\nC2: Theoretical exam passed? T F -\nC3: Practical exam passed? T - F\nIssue a driving license? X\nRequest additional driving lessons? X\nRequest to take the exam again? X\nWhat test data will show that there are contradictory rules in the decision table?",
+    "answer_a": "C1 = T, C2 = T, C3 = F",
+    "answer_b": "C1 = T, C2 = F, C3 = T",
+    "answer_c": "C1 = T, C2 = T, C3 = T and C1 = F, C2 = T, C3 = T",
+    "answer_d": "C1 = F, C2 = F, C3 = F",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "You are designing test cases based on the following state transition diagram:\nWhat is the MINIMUM number of test cases required to achieve 100% valid transitions coverage?",
+    "answer_a": "3",
+    "answer_b": "2",
+    "answer_c": "5",
+    "answer_d": "6",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "You want to apply branch testing to the code represented by the following control flow graph.\nHow many coverage items do you need to test?",
+    "answer_a": "2",
+    "answer_b": "4",
+    "answer_c": "8",
+    "answer_d": "7",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "How can white-box testing be useful in support of black-box testing?",
+    "answer_a": "White-box coverage measures can help testers evaluate black-box tests in terms of the",
+    "answer_b": "White-box coverage analysis can help testers identify unreachable fragments of the source",
+    "answer_c": "Branch testing subsumes black-box test techniques, so achieving full branch coverage",
+    "answer_d": "White-box test techniques can provide coverage items for black-box techniques",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "Consider the following list:\n\u2022 Correct input not accepted\n\u2022 Incorrect input accepted\n\u2022 Wrong output format\n\u2022 Division by zero\nWhat test technique is MOST PROBABLY used by the tester who uses this list when performing\ntesting?",
+    "answer_a": "Exploratory testing",
+    "answer_b": "Fault attack",
+    "answer_c": "Checklist-based testing",
+    "answer_d": "Boundary value analysis",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following BEST describes how using checklist-based testing can result in increased\ncoverage?",
+    "answer_a": "Checklist items can be defined at a sufficiently low level of detail, so the tester can",
+    "answer_b": "Checklists can be automated, so each time an automated test execution covers the",
+    "answer_c": "Each checklist item should be tested separately and independently, so the elements cover",
+    "answer_d": "Two testers designing and executing tests based on the same high-level checklist items will",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following provides the BEST example of a scenario-oriented acceptance criterion?",
+    "answer_a": "The application must allow users to delete their account and all associated data upon",
+    "answer_b": "When a customer adds an item to their cart and proceeds to checkout, they should be",
+    "answer_c": "IF (contain(product(23).Name, cart.products())) THEN return FALSE",
+    "answer_d": "The website must comply with the ICT Accessibility 508 Standards and ensure that all",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "You are using acceptance test-driven development and designing test cases based on the\nfollowing user story:\nAs a Regular or Special user, I want to be able to use my electronic floor card, to access specific\nfloors.\nAcceptance Criteria:\nAC1: Regular users have access to floors 1 to 3\nAC2: Floor 4 is only accessible to Special users\nAC3: Special users have all the access rights of Regular users\nWhich test case is the MOST reasonable one to test AC3?",
+    "answer_a": "Check that a Regular user can access floors 1 and 3",
+    "answer_b": "Check that a Regular user cannot access floor 4",
+    "answer_c": "Check that a Special user can access floor 5",
+    "answer_d": "Check that a Special user can access floors 1, 2 and 3",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is NOT a purpose of a test plan?",
+    "answer_a": "To define test data and expected results for component tests and component integration",
+    "answer_b": "To define as exit criteria from the component test level that \u201c100% statement coverage and",
+    "answer_c": "To describe what fields the test progress report shall contain and what should be the form",
+    "answer_d": "To explain why system integration testing will be excluded from testing, although the test",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "At the beginning of each iteration, the team estimates the amount of work (in person-days) they will\nneed to complete during the iteration. Let E(n) be the estimated amount of work for iteration n, and\nlet A(n) be the actual amount of work done in iteration n. From the third iteration, the team uses the\nfollowing estimation model based on extrapolation:\n3\u2217\ud835\udc34(\ud835\udc5b\u22121)+\ud835\udc34(\ud835\udc5b\u22122)\n\ud835\udc38(\ud835\udc5b)=\nThe graph shows the estimated and actual amount of4 work for the first four iterations.\nEstimated and actual effort (in person-days)\n13\n12\n11\n10\n9\n8\n7\n6\n5\n4\n3\n2\n1\n0\nIteration #1 Iteration #2 Iteration #3 Iteration #4\nEstimated Actual\nWhat is the estimated amount of work for iteration #5?",
+    "answer_a": "10.5 person-days",
+    "answer_b": "8.25 person-days",
+    "answer_c": "6.5 person-days",
+    "answer_d": "9.4 person-days",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "You are preparing a test execution schedule for executing seven test cases TC 1 to TC 7.\nThe following figure includes the priorities of these test cases (1=highest priority, 3 = lowest\npriority).\nThe figure also shows the dependencies between test cases using arrows. For instance, the arrow\nfrom TC 4 to TC 5 means that TC 5 can only be executed if TC 4 was previously executed.\nWhich test case should be executed sixth?",
+    "answer_a": "TC 3",
+    "answer_b": "TC 5",
+    "answer_c": "TC 6",
+    "answer_d": "TC 2",
+    "correct_answer": "a",
+    "clarification": ""
+  },
+  {
+    "question": "What does the test pyramid model show?",
+    "answer_a": "That tests may have different priorities",
+    "answer_b": "That tests may have different granularity",
+    "answer_c": "That tests may require different coverage criteria",
+    "answer_d": "That tests may depend on other tests",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "What is the relationship between the testing quadrants, test levels and test types?",
+    "answer_a": "Testing quadrants represent particular combinations of test levels and test types, defining",
+    "answer_b": "Testing quadrants describe the degree of granularity of individual test types performed at",
+    "answer_c": "Testing quadrants assign the test types that can be performed to the test levels",
+    "answer_d": "Testing quadrants group test levels and test types by several criteria such as targeting",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is an example of how product risk analysis may influence the thoroughness\nand scope of testing?",
+    "answer_a": "Continuous risk monitoring allows us to identify an emerging risk as soon as possible",
+    "answer_b": "Risk identification allows us to implement risk mitigation activities and reduce the risk level",
+    "answer_c": "The assessed risk level helps us to select the rigor of testing",
+    "answer_d": "Risk analysis allows us to derive coverage items",
+    "correct_answer": "c",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following activities in the test process makes the MOST use of test progress reports?",
+    "answer_a": "Test design",
+    "answer_b": "Test completion",
+    "answer_c": "Test analysis",
+    "answer_d": "Test planning",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is NOT an example of how configuration management supports testing?",
+    "answer_a": "All commits to the repository are uniquely identified and version controlled",
+    "answer_b": "All changes in the test environment elements are tracked",
+    "answer_c": "All requirement specifications are referenced unambiguously in test plans",
+    "answer_d": "All identified defects have an assigned status",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Consider the following defect report for a web-based shopping application:\nApplication: WebShop v0.99\nDefect: Login button not working\nSteps to Reproduce:\nLaunch the website\nClick on the login button\nExpected result: The user should be redirected to the login page.\nActual result: The login button does not respond when clicked.\nSeverity: High\nPriority: Urgent\nWhat is the MOST important information that is missing from this defect report?",
+    "answer_a": "Name of the tester and date",
+    "answer_b": "Test environment elements and their version numbers",
+    "answer_c": "Identification of the test object",
+    "answer_d": "Impact on the interests of stakeholders",
+    "correct_answer": "b",
+    "clarification": ""
+  },
+  {
+    "question": "Tools from which of the following categories help with the organization of test cases, detected\ndefects and configuration management?",
+    "answer_a": "Test execution and coverage tools",
+    "answer_b": "Test design and implementation tools",
+    "answer_c": "Defect management tools",
+    "answer_d": "Test management tools",
+    "correct_answer": "d",
+    "clarification": ""
+  },
+  {
+    "question": "Which of the following is MOST likely to be a benefit of test automation?",
+    "answer_a": "The capability of generating test cases without access to the test basis",
+    "answer_b": "The achievement of increased coverage through more objective assessment",
+    "answer_c": "The increase in test execution times available with higher processing power",
+    "answer_d": "The prevention of human errors through greater consistency and repeatability",
+    "correct_answer": "d",
+    "clarification": ""
+  }
+]
