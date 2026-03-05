@@ -31,7 +31,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 3,
-      text: "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Which testing principle explains your skepticism?",
+      text: "You have been assigned as a tester to a team producing a new system incrementally. You have noticed that no changes have been made to the existing regression test cases for several iterations and no new regression defects were identified. Your manager is happy, but you are not. Which testing principle explains your skepticism?",
       options: [
         "Tests wear out",
         "Absence-of-defects fallacy",
@@ -683,7 +683,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 62,
-      text: "The following decision table contains the rules for determining the risk of atherosclerosis.\nRule 1 Rule 2 Rule 3 Rule 4 Rule 5\nConditions\nCholesterol (mg/dl) \u2264 124, 125-200, \u2264 124, 125-200, \u2265 201\nBlood pressure (mm Hg) \u2264 140, > 140, \u2264 140, > 140, -\nAction\nRisk level very low, low, medium, high, very high\nYou designed the test cases with the following input data:\nTC1: Cholesterol = 125 mg/dl Blood pressure = 141 mm Hg\nTC2: Cholesterol = 200 mg/dl Blood pressure = 201 mm Hg\nTC3: Cholesterol = 124 mg/dl Blood pressure = 201 mm Hg\nTC4: Cholesterol = 109 mg/dl Blood pressure = 200 mm Hg\nTC5: Cholesterol = 201 mg/dl Blood pressure = 140 mm Hg\nWhat is the decision table coverage achieved by these test cases?",
+      text: "The following decision table contains the rules for determining the risk of atherosclerosis.\nRule 1 Rule 2 Rule 3 Rule 4 Rule 5\nConditions\nCholesterol (mg/dl) \u2264 124, 125-200, \u2264 124, 125-200, \u2265 201\nBlood pressure (mm Hg) \u2264 140, > 140, \u2264 140, > 140, -\nAction\nRisk level very low, low, medium, high, very high\nYou designed the test cases with the following input data:\nTC1: Cholesterol = 125 mg/dl Blood pressure = 141 mm Hg\nTC2: Cholesterol = 200 mg/dl Blood pressure = 201 mm Hg\nTC3: Cholesterol = 124 mg/dl Blood pressure = 201 mm Hg\nTC4: Cholesterol = 109 mg/dl Blood pressure = 200 mg/dl\nTC5: Cholesterol = 201 mg/dl Blood pressure = 140 mm Hg\nWhat is the decision table coverage achieved by these test cases?",
       options: [
         "40%",
         "60%",
@@ -1333,5 +1333,446 @@ export const questionsData: Record<string, QuestionData[]> = {
       category: "Test Tools"
     }
   ],
-  "paper-d": []
+  "paper-d": [
+    {
+      id: 121,
+      text: "Which of the following is a typical test objective?",
+      options: [
+        "Finding and fixing defects in the test object",
+        "Maintaining effective communications with developers",
+        "Validating that legal requirements have been met",
+        "Building confidence in the quality of the test object"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 122,
+      text: "Which of the following statements about the cause/effect relationship is CORRECT based on the scenario of a UI designer, programmer, and operational system complaints?",
+      options: [
+        "The miscalculation of bonuses is a defect that occasionally occurs",
+        "The fine received for failing to address some disabled users is a failure",
+        "The programmer working under severe time pressure is a root cause",
+        "The design of the user interface includes a designer error"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 123,
+      text: "Test cases are varied each time despite test conditions remaining the same. Which testing principle is being addressed?",
+      options: [
+        "Tests wear out",
+        "Absence-of-defects fallacy",
+        "Early testing saves time and money",
+        "Defects cluster together"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 124,
+      text: "Match tasks (1. Derive cases, 2. Identify testware, 3. Organize procedures, 4. Evaluate basis) with activities (A. Analysis, B. Design, C. Implementation, D. Completion). Which BEST matches?",
+      options: [
+        "1B, 2A, 3D, 4C",
+        "1B, 2D, 3C, 4A",
+        "1C, 2A, 3B, 4D",
+        "1C, 2D, 3A, 4B"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 125,
+      text: "Which of the following BEST shows the testware produced as a result of performing test implementation?",
+      options: [
+        "Data in database for inputs/results, and documented sequences of test cases",
+        "List of elements for environment, and test cases",
+        "Test completion report, data in database, and test cases",
+        "Test completion report, list of environment elements, and documented sequences"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 126,
+      text: "Which of the following is MOST likely to describe a task performed by someone in a test management role?",
+      options: [
+        "Evaluate the test basis and the test object",
+        "Define test environment requirements",
+        "Assess testability of the test object",
+        "Create the test completion report"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 127,
+      text: "Which of the following is an advantage of the whole team approach?",
+      options: [
+        "Improved communication between team members",
+        "Decreased individual accountability for quality",
+        "Faster deployment of deliverables to the end users",
+        "Reduced collaboration with external business users"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 128,
+      text: "Which are MOST likely to be considered benefits of the independence of testing?",
+      options: [
+        "Testers in different location and developers mostly accountable for quality",
+        "Testers questioning assumptions and having different biases",
+        "Testers in different location and establish confrontational dynamic",
+        "Testers questioning assumptions and establishing confrontational dynamic"
+      ],
+      category: "Fundamentals of Testing"
+    },
+    {
+      id: 129,
+      text: "Which of the following is a good testing practice that applies to all software development lifecycles?",
+      options: [
+        "Each test level has specific and distinct test objectives",
+        "Test implementation and execution should start during the requirements phase",
+        "Testers should start test design as soon as drafts of work products become available",
+        "Every dynamic testing activity has a corresponding static testing activity"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 130,
+      text: "Which of the following is an example of a test-first approach to development?",
+      options: [
+        "Behavior-Driven Development",
+        "Test Level Driven Development",
+        "Function-Driven Development",
+        "Performance-Driven Development"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 131,
+      text: "Which of the following is MOST likely to be a challenge encountered when implementing DevOps?",
+      options: [
+        "Making sure that non-functional quality characteristics are not overlooked",
+        "Managing continuously changing test environments",
+        "The need for more manual testers with suitable experience",
+        "Setting up the test automation as part of the delivery pipeline"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 132,
+      text: "Which of the following BEST describes retrospectives?",
+      options: [
+        "Identify team members who did not fully contribute",
+        "Opportunity to identify successful activities for future use",
+        "Allow team members to voice concerns about workload",
+        "Forum where members focus on discussing the plan for the next sprint"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 133,
+      text: "Which of the following tests is MOST likely to be performed as part of functional testing?",
+      options: [
+        "Check that sort function puts elements in ascending order",
+        "Check whether sort function completes within one second",
+        "Check how easily sort function can be changed",
+        "Check that sort function works when moved to 64-bit OS"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 134,
+      text: "Which of the following is MOST likely to be a trigger that leads to maintenance testing of a currency exchange system?",
+      options: [
+        "Developers reported that changing the system was difficult",
+        "The refund option was removed due to incorrect repayments",
+        "Agile team started a story adding customer loyalty points",
+        "Language support option used to enable multiple languages"
+      ],
+      category: "Testing Throughout the S D L C"
+    },
+    {
+      id: 135,
+      text: "Which of the following CANNOT be examined by static testing?",
+      options: [
+        "Contract",
+        "Test plan",
+        "Encrypted code",
+        "Test charter"
+      ],
+      category: "Static Testing"
+    },
+    {
+      id: 136,
+      text: "Which of the following statements about the value of static testing is CORRECT?",
+      options: [
+        "Defect types found are different from dynamic testing",
+        "Dynamic testing detects all static testing defects plus some more",
+        "Dynamic testing can identify some static testing defects but not all",
+        "Static testing identifies all dynamic testing defects plus more"
+      ],
+      category: "Static Testing"
+    },
+    {
+      id: 137,
+      text: "Sequence in the review process of the activities (Anomalies deliberated, updates addressed, reviewers employ techniques, objective established, access provided)?",
+      options: [
+        "4 – 3 – 5 – 2 – 1",
+        "4 – 5 – 3 – 1 – 2",
+        "5 – 4 – 1 – 3 – 2",
+        "5 – 4 – 3 – 2 – 1"
+      ],
+      category: "Static Testing"
+    },
+    {
+      id: 138,
+      text: "Which participant in the review process is responsible for ensuring meetings run effectively and everyone can voice opinions freely?",
+      options: [
+        "Manager",
+        "Moderator",
+        "Chairperson",
+        "Review Leader"
+      ],
+      category: "Static Testing"
+    },
+    {
+      id: 139,
+      text: "Requirement: Cost > $100 gets 5% discount on subsequent purchases. Which technique will be MOST helpful?",
+      options: [
+        "White-box test techniques",
+        "Black-box test techniques",
+        "Experience-based test techniques",
+        "Risk-based test techniques"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 140,
+      text: "Cinema tickets discount (D = CY - BY). D < 0 error, 0-17 student, 18-64 no discount, 65+ pensioner. Suite has (1990, 2020: no discount) and (2030, 2029: error). Add which data for full valid EP coverage?",
+      options: [
+        "BY = 2001, CY = 2065",
+        "BY = 1900, CY = 1965",
+        "BY = 1965, CY = 1900",
+        "BY = 2011, CY = 2029"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 141,
+      text: "Temperature control: 0-2 inclusive is \"OK\". Lower is \"too low\", higher is \"too high\". Using 2-value BVA, highest level of coverage set?",
+      options: [
+        "–1, 3",
+        "0, 2",
+        "–1, 0, 2, 3",
+        "–2, 0, 2, 4"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 142,
+      text: "Decision table coverage: Which added test case will increase coverage from existing TC1-TC4 (19-year unregistered no exp, 65-year unregistered 5yr exp, 66-year registered no exp, 65-year registered 4yr exp)?",
+      options: [
+        "66-year-old, unregistered man with no experience; expected result: category B",
+        "55-year-old, unregistered woman with 2 years of experience; expected result: category A",
+        "19-year-old, registered woman with 5 years of experience; expected result: category D",
+        "No additional test case can increase the coverage"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 143,
+      text: "Hotel reservation state transition: sequence of events achieving highest valid transitions coverage?",
+      options: [
+        "NotAvailable, Available, ChangeRoom, NotAvailable, Cancel",
+        "Available, ChangeRoom, NotAvailable, Available, Pay",
+        "Available, ChangeRoom, Available, ChangeRoom, NotAvailable",
+        "NotAvailable, Cancel, ChangeRoom, Available, Pay"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 144,
+      text: "Test suite S for program P achieves 100% statement coverage with three cases (each 50% coverage). Which is CORRECT?",
+      options: [
+        "Executing S will cause all possible failures in P",
+        "S achieves 100% branch coverage for P",
+        "Every executable statement containing a defect has been run at least once",
+        "After removing one case from S, the remaining two still achieve 100% coverage"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 145,
+      text: "Why does white-box testing facilitate defect detection even with vague specifications?",
+      options: [
+        "Cases are based on structure rather than requirements",
+        "Coverage can be well-defined and easily measured",
+        "Techniques are designed to detect omissions in requirements",
+        "Techniques can be used in both static and dynamic testing"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 146,
+      text: "Which of the following is NOT anticipated by the tester while applying error guessing?",
+      options: [
+        "Developer misunderstood interest calculation formula",
+        "Developer wrote IR^N instead of (1+IR)^N",
+        "Developer missed the seminar on new legislation",
+        "Interest calculated by the system is not precise enough"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 147,
+      text: "Which of the following is true about exploratory testing?",
+      options: [
+        "Test cases are designed before the session starts",
+        "The tester can perform execution but not design",
+        "Results are good predictors of remaining defects",
+        "During exploratory testing the tester may use black-box test techniques"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 148,
+      text: "Which collaborative user story writing practice enables team collective understanding?",
+      options: [
+        "Planning poker",
+        "Reviews to detect inconsistencies",
+        "Iteration planning",
+        "Conversation to understand software usage"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 149,
+      text: "User Story: Filter search results by price range (Precondition: Product A $100, B $110). BEST example of a test case?",
+      options: [
+        "Set filter to $90-$100. Expected: results show Product A",
+        "Expected result: default prices are $100 and $110",
+        "Set filter to $90-$115. Expected: results show Product A and B",
+        "Enter webpage with three different browsers"
+      ],
+      category: "Test Analysis and Design"
+    },
+    {
+      id: 150,
+      text: "Which of the following BEST define EXIT criteria in a testing project?",
+      options: [
+        "Budget is approved",
+        "Budget runs out and test cases achieved 80% statement coverage",
+        "Test basis is available",
+        "Test plan is documented"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 151,
+      text: "Final estimate of time to execute four test cases using three-point estimation (Best: 1hr, Worst: 8hr, Most likely: 3hr)?",
+      options: [
+        "14 hours",
+        "3.5 hours",
+        "16 hours",
+        "12 hours"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 152,
+      text: "Traceability matrix prioritization. Which test case should be executed LAST based on additional coverage technique?",
+      options: [
+        "TC1",
+        "TC2",
+        "TC3",
+        "TC4"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 153,
+      text: "How can the testing quadrants be beneficial for testing?",
+      options: [
+        "Dividing test process into four phases",
+        "Assessing high-level coverage based on phases",
+        "Help non-technical stakeholders understand different test types",
+        "Develop communication strategy based on personality"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 154,
+      text: "Risk level is $1,000 and likelihood is 50%. What is the risk impact?",
+      options: [
+        "$500",
+        "$2,000",
+        "$50,000",
+        "$200"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 155,
+      text: "Which of the following are product risks?",
+      options: [
+        "Scope creep",
+        "Poor architecture and failing to address non-functional requirements",
+        "Cost-cutting",
+        "Poor tool support"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 156,
+      text: "Which of the following is NOT a valid purpose for a test report?",
+      options: [
+        "Tracking test progress and identifying areas for attention",
+        "Providing info on executed tests and results",
+        "Providing steps to reproduce each defect",
+        "Providing info on testing planned for next period"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 157,
+      text: "Support reassembles release files based on version number to allow fix. What enabled this?",
+      options: [
+        "Risk management",
+        "Test monitoring and control",
+        "Whole team approach",
+        "Configuration management"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 158,
+      text: "Book Lending System defect report missing reproduction help. MOST likely to help reproduction quickly?",
+      options: [
+        "Adding info about which users and books the failure affects",
+        "Filling in Priority field",
+        "Adding memory dumps and database snapshots",
+        "Repeating test for different environments"
+      ],
+      category: "Managing the Test Activities"
+    },
+    {
+      id: 159,
+      text: "Tools from which categories are MOST likely to facilitate test execution?",
+      options: [
+        "Collaboration and Design tools",
+        "DevOps and Non-functional testing tools",
+        "Collaboration and Management tools",
+        "DevOps and Management tools"
+      ],
+      category: "Test Tools"
+    },
+    {
+      id: 160,
+      text: "Which of the following is MOST likely to be a benefit of test automation?",
+      options: [
+        "Generation of test cases without test basis",
+        "Objective assessment of coverage",
+        "Increase in execution times",
+        "Prevention of human errors through consistency"
+      ],
+      category: "Test Tools"
+    }
+  ]
 };
