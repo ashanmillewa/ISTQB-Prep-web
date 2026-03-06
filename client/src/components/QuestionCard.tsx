@@ -25,6 +25,16 @@ export function QuestionCard({ question, selectedOption, onSelectOption }: Quest
           {question.text}
         </h2>
 
+        {question.image && (
+          <div className="mb-8 rounded-lg overflow-hidden border border-border/40 bg-white p-2">
+            <img 
+              src={question.image} 
+              alt="Question illustration" 
+              className="max-w-full h-auto mx-auto"
+            />
+          </div>
+        )}
+
         <RadioGroup
           value={selectedOption !== null ? selectedOption.toString() : ""}
           onValueChange={(val) => onSelectOption(parseInt(val))}

@@ -1347,7 +1347,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 122,
-      text: "Which of the following statements about the cause/effect relationship is CORRECT based on the scenario of a UI designer, programmer, and operational system complaints?",
+      text: "A designer documents a design for a user interface that does not suitably address disabled users because the designer is tired. The programmer implements the user interface in line with the design but as they are working under severe time pressure, they do not include suitable exception handling in their program code for bonus calculations. When the operational system is used, complaints are made by some disabled users about the interface and the company is subsequently fined by the relevant regulatory authority. No one notices that bonus calculations are sometimes incorrect. Which of the following statements is CORRECT?",
       options: [
         "The miscalculation of bonuses is a defect that occasionally occurs",
         "The fine received for failing to address some disabled users is a failure",
@@ -1358,7 +1358,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 123,
-      text: "Test cases are varied each time despite test conditions remaining the same. Which testing principle is being addressed?",
+      text: "Test conditions are being used by testers to generate test cases and execute tests. Even though the test conditions remain the same, the test cases are varied each time. Which of the following ‘principles of testing’ is being addressed through the variation of test cases?",
       options: [
         "Tests wear out",
         "Absence-of-defects fallacy",
@@ -1369,7 +1369,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 124,
-      text: "Match tasks (1. Derive cases, 2. Identify testware, 3. Organize procedures, 4. Evaluate basis) with activities (A. Analysis, B. Design, C. Implementation, D. Completion). Which BEST matches?",
+      text: "Given the following test tasks:\n1. Derive test cases from test conditions\n2. Identify reusable testware\n3. Organize test cases into test procedures\n4. Evaluate the test basis and the test object\nAnd the following test activities:\nA. Test analysis\nB. Test design\nC. Test implementation\nD. Test completion\nWhich of the following BEST matches the tasks with the activities?",
       options: [
         "1B, 2A, 3D, 4C",
         "1B, 2D, 3C, 4A",
@@ -1380,12 +1380,12 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 125,
-      text: "Which of the following BEST shows the testware produced as a result of performing test implementation?",
+      text: "Given the following testware:\ni. Test completion report\nii. Data held in a database used for test inputs and expected results\niii. The list of elements needed to build the test environment\niv. Documented sequences of test cases in execution order\nv. Test cases\nWhich of the following BEST shows the testware produced as a result of performing test implementation?",
       options: [
-        "Data in database for inputs/results, and documented sequences of test cases",
-        "List of elements for environment, and test cases",
-        "Test completion report, data in database, and test cases",
-        "Test completion report, list of environment elements, and documented sequences"
+        "ii, iv",
+        "iii, v",
+        "i, ii, v",
+        "i, iii, iv"
       ],
       category: "Fundamentals of Testing"
     },
@@ -1413,12 +1413,12 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 128,
-      text: "Which are MOST likely to be considered benefits of the independence of testing?",
+      text: "Given the following benefits and drawbacks of the independence of testing:\ni. The testers work in a different location from the developers\nii. Testers question the assumptions programmers make while writing code\niii. A confrontational dynamic has been established between testers and developers\niv. Developers have convinced themselves that testers are mostly accountable for quality\nv. Testers have different biases than those held by the developers\nWhich are MOST likely to be considered benefits?",
       options: [
-        "Testers in different location and developers mostly accountable for quality",
-        "Testers questioning assumptions and having different biases",
-        "Testers in different location and establish confrontational dynamic",
-        "Testers questioning assumptions and establishing confrontational dynamic"
+        "i, iv",
+        "ii, v",
+        "i, iii, iv",
+        "ii, iii, v"
       ],
       category: "Fundamentals of Testing"
     },
@@ -1545,7 +1545,8 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 140,
-      text: "Cinema tickets discount (D = CY - BY). D < 0 error, 0-17 student, 18-64 no discount, 65+ pensioner. Suite has (1990, 2020: no discount) and (2030, 2029: error). Add which data for full valid EP coverage?",
+      text: "Which of the following test data sets should be added to achieve full valid equivalence partitioning coverage for the discount type?",
+      image: "/src/assets/images/question-20.png",
       options: [
         "BY = 2001, CY = 2065",
         "BY = 1900, CY = 1965",

@@ -8,6 +8,7 @@ export interface Question {
   correctAnswer: number;
   explanation: string;
   category: string;
+  image?: string;
 }
 
 export interface Paper {
@@ -25,7 +26,8 @@ const mergeData = (paperId: string): Question[] => {
     return {
       ...q,
       correctAnswer: answer?.correctAnswer ?? 0,
-      explanation: answer?.explanation ?? ""
+      explanation: answer?.explanation ?? "",
+      image: q.image
     };
   });
 };
