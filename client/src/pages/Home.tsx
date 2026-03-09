@@ -57,7 +57,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="text-sm font-medium text-muted-foreground">Pass Rate</p>
-                      <p className="text-xl font-bold">94%</p>
+                      <p className="text-xl font-bold">65%</p>
                     </div>
                   </CardContent>
                 </Card>
