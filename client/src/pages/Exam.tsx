@@ -98,8 +98,8 @@ export default function Exam() {
     <div className="min-h-screen bg-secondary/30 flex flex-col">
       <Navbar />
 
-      <div className="container mx-auto px-4 py-8 flex-grow">
-        <div className="grid lg:grid-cols-[280px_1fr] gap-8 items-start">
+      <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 lg:py-8 flex-grow">
+        <div className="grid lg:grid-cols-[280px_1fr] gap-4 sm:gap-6 lg:gap-8 items-start">
           
           {/* Sidebar Navigation */}
           <aside className="hidden lg:block sticky top-24">
@@ -171,14 +171,14 @@ export default function Exam() {
 
           {/* Main Content */}
           <main className="max-w-3xl mx-auto w-full">
-            <div className="flex flex-col-reverse sm:flex-row items-center justify-between gap-4 mb-6">
-              <div className="text-sm font-medium text-muted-foreground">
+            <div className="grid sm:flex sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <div className="text-xs sm:text-sm font-medium text-muted-foreground order-2 sm:order-1">
                 Question {currentQuestionIndex + 1} of {totalQuestions}
               </div>
               
-              <div className="flex items-center gap-4 w-full sm:w-auto justify-between sm:justify-end">
+              <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto justify-between sm:justify-end order-1 sm:order-2">
                 <ExamTimer 
-                  durationSeconds={60 * 60} // 60 minutes
+                  durationSeconds={60 * 60}
                   onTimeUp={handleSubmit}
                   isActive={isExamActive}
                 />
@@ -187,15 +187,16 @@ export default function Exam() {
                   variant="outline"
                   size="sm"
                   onClick={toggleFlag}
-                  className={flaggedQuestions.has(currentQuestion.id) ? "text-orange-500 border-orange-200 bg-orange-50" : ""}
+                  className={`text-xs sm:text-sm px-2 sm:px-4 ${flaggedQuestions.has(currentQuestion.id) ? "text-orange-500 border-orange-200 bg-orange-50" : ""}`}
                 >
-                  <Flag className="w-4 h-4 mr-2" />
-                  {flaggedQuestions.has(currentQuestion.id) ? "Flagged" : "Flag"}
+                  <Flag className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                  <span className="hidden sm:inline">{flaggedQuestions.has(currentQuestion.id) ? "Flagged" : "Flag"}</span>
+                  <span className="sm:hidden">{flaggedQuestions.has(currentQuestion.id) ? "✓" : "⚑"}</span>
                 </Button>
               </div>
             </div>
 
-            <div className="mb-8">
+            <div className="mb-4 sm:mb-6 lg:mb-8">
               <QuestionCard
                 question={currentQuestion}
                 selectedOption={answers[currentQuestion.id] ?? null}
@@ -203,22 +204,24 @@ export default function Exam() {
               />
             </div>
 
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-4">
               <Button 
                 variant="outline" 
                 onClick={handlePrev}
                 disabled={currentQuestionIndex === 0}
-                className="w-32"
+                className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5"
               >
-                <ChevronLeft className="w-4 h-4 mr-2" />
-                Previous
+                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                <span className="hidden sm:inline">Previous</span>
+                <span className="sm:hidden">Prev</span>
               </Button>
 
               {currentQuestionIndex === totalQuestions - 1 ? (
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
-                    <Button className="w-32" variant="default">
-                      Submit Exam
+                    <Button className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5" variant="default">
+                      <span className="hidden sm:inline">Submit Exam</span>
+                      <span className="sm:hidden">Submit</span>
                     </Button>
                   </AlertDialogTrigger>
                   <AlertDialogContent>
@@ -238,26 +241,29 @@ export default function Exam() {
               ) : (
                 <Button 
                   onClick={handleNext}
-                  className="w-32"
+                  className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5"
                 >
-                  Next
-                  <ChevronRight className="w-4 h-4 ml-2" />
+                  <span className="hidden sm:inline">Next</span>
+                  <span className="sm:hidden">Next</span>
+                  <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" />
                 </Button>
               )}
             </div>
             
             {/* Mobile Navigator (Visible only on small screens) */}
-            <div className="mt-8 lg:hidden">
-               <div className="flex overflow-x-auto gap-2 pb-2">
+            <div className="mt-4 sm:mt-6 lg:hidden">
+               <p className="text-xs text-muted-foreground mb-2">Unit {Math.floor(currentQuestionIndex / 6) + 1}: Jump to question</p>
+               <div className="flex overflow-x-auto gap-1.5 pb-2">
                  {questions.map((q, idx) => (
                     <button
                       key={q.id}
                       onClick={() => setCurrentQuestionIndex(idx)}
                       className={`
-                        flex-shrink-0 h-8 w-8 rounded-md text-xs font-medium border
-                        ${idx === currentQuestionIndex ? 'border-primary bg-primary/10 text-primary' : 'border-border bg-background'}
+                        flex-shrink-0 h-7 w-7 rounded-md text-[10px] font-medium border transition-all
+                        ${idx === currentQuestionIndex ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary' : 'border-border bg-background'}
                         ${answers[q.id] !== undefined ? 'bg-primary/5' : ''}
                       `}
+                      title={`Question ${idx + 1}`}
                     >
                       {idx + 1}
                     </button>
