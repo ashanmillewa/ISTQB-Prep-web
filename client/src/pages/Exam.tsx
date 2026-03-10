@@ -198,6 +198,27 @@ export default function Exam() {
               </div>
             </div>
 
+            {/* Mobile Navigator (Visible only on small screens) - TOP */}
+            <div className="mb-3 sm:mb-4 lg:hidden w-full">
+               <p className="text-xs text-muted-foreground mb-2 truncate">Jump to question</p>
+               <div className="flex overflow-x-auto gap-1 pb-1.5 -mx-3 px-3 sm:-mx-0 sm:px-0 sm:gap-1.5 sm:pb-0">
+                 {questions.map((q, idx) => (
+                    <button
+                      key={q.id}
+                      onClick={() => setCurrentQuestionIndex(idx)}
+                      className={`
+                        flex-shrink-0 h-8 w-8 rounded-md text-xs font-semibold border transition-all
+                        ${idx === currentQuestionIndex ? 'border-primary bg-primary text-primary-foreground ring-1 ring-primary ring-offset-1' : 'border-border/50 bg-background hover:border-primary/50'}
+                        ${answers[q.id] !== undefined && idx !== currentQuestionIndex ? 'bg-primary/10 border-primary/30' : ''}
+                      `}
+                      title={`Question ${idx + 1}`}
+                    >
+                      {idx + 1}
+                    </button>
+                 ))}
+               </div>
+            </div>
+
             {/* Question Card */}
             <div className="mb-4 sm:mb-5 md:mb-8 w-full min-w-0">
               <QuestionCard
@@ -251,27 +272,6 @@ export default function Exam() {
                   <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-1.5 flex-shrink-0" />
                 </Button>
               )}
-            </div>
-            
-            {/* Mobile Navigator (Visible only on small screens) */}
-            <div className="mt-4 sm:mt-5 md:mt-6 lg:hidden w-full">
-               <p className="text-xs text-muted-foreground mb-2 truncate">Unit {Math.floor(currentQuestionIndex / 6) + 1} · Jump to question</p>
-               <div className="flex overflow-x-auto gap-1 pb-1.5 -mx-2 px-2 sm:gap-1.5 sm:pb-2 sm:mx-0 sm:px-0">
-                 {questions.map((q, idx) => (
-                    <button
-                      key={q.id}
-                      onClick={() => setCurrentQuestionIndex(idx)}
-                      className={`
-                        flex-shrink-0 h-8 w-8 rounded-md text-xs font-semibold border transition-all
-                        ${idx === currentQuestionIndex ? 'border-primary bg-primary text-primary-foreground ring-1 ring-primary ring-offset-1' : 'border-border/50 bg-background hover:border-primary/50'}
-                        ${answers[q.id] !== undefined && idx !== currentQuestionIndex ? 'bg-primary/10 border-primary/30' : ''}
-                      `}
-                      title={`Question ${idx + 1}`}
-                    >
-                      {idx + 1}
-                    </button>
-                 ))}
-               </div>
             </div>
 
           </main>
