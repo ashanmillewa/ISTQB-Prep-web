@@ -278,5 +278,6 @@ export default function Exam() {
         </div>
       </div>
     </div>
+    </div>
   );
 }
