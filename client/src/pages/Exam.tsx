@@ -95,11 +95,12 @@ export default function Exam() {
   };
 
   return (
-    <div className="min-h-screen bg-secondary/30 flex flex-col">
+    <div className="min-h-screen bg-secondary/30 flex flex-col w-full overflow-x-hidden">
       <Navbar />
 
-      <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 lg:py-8 flex-grow">
-        <div className="grid lg:grid-cols-[280px_1fr] gap-4 sm:gap-6 lg:gap-8 items-start">
+      <div className="w-full px-2 sm:px-3 md:px-4 py-3 sm:py-4 md:py-6 lg:py-8 flex-grow">
+        <div className="mx-auto max-w-7xl px-0 sm:px-2 md:px-4">
+          <div className="grid lg:grid-cols-[260px_1fr] gap-3 sm:gap-4 md:gap-6 lg:gap-8 items-start">
           
           {/* Sidebar Navigation */}
           <aside className="hidden lg:block sticky top-24">
@@ -170,13 +171,14 @@ export default function Exam() {
           </aside>
 
           {/* Main Content */}
-          <main className="max-w-3xl mx-auto w-full">
-            <div className="grid sm:flex sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
-              <div className="text-xs sm:text-sm font-medium text-muted-foreground order-2 sm:order-1">
-                Question {currentQuestionIndex + 1} of {totalQuestions}
+          <main className="w-full min-w-0">
+            {/* Header Info */}
+            <div className="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-2.5 sm:gap-4 mb-3 sm:mb-4 md:mb-6">
+              <div className="text-xs sm:text-sm font-medium text-muted-foreground truncate">
+                Question {currentQuestionIndex + 1}/{totalQuestions}
               </div>
               
-              <div className="flex items-center gap-2 sm:gap-4 w-full sm:w-auto justify-between sm:justify-end order-1 sm:order-2">
+              <div className="flex items-center gap-2 sm:gap-3 justify-between sm:justify-end flex-shrink-0">
                 <ExamTimer 
                   durationSeconds={60 * 60}
                   onTimeUp={handleSubmit}
@@ -187,7 +189,7 @@ export default function Exam() {
                   variant="outline"
                   size="sm"
                   onClick={toggleFlag}
-                  className={`text-xs sm:text-sm px-2 sm:px-4 ${flaggedQuestions.has(currentQuestion.id) ? "text-orange-500 border-orange-200 bg-orange-50" : ""}`}
+                  className={`text-xs sm:text-sm px-2.5 sm:px-4 py-1.5 sm:py-2 flex-shrink-0 ${flaggedQuestions.has(currentQuestion.id) ? "text-orange-500 border-orange-200 bg-orange-50" : ""}`}
                 >
                   <Flag className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
                   <span className="hidden sm:inline">{flaggedQuestions.has(currentQuestion.id) ? "Flagged" : "Flag"}</span>
@@ -196,7 +198,8 @@ export default function Exam() {
               </div>
             </div>
 
-            <div className="mb-4 sm:mb-6 lg:mb-8">
+            {/* Question Card */}
+            <div className="mb-4 sm:mb-5 md:mb-8 w-full min-w-0">
               <QuestionCard
                 question={currentQuestion}
                 selectedOption={answers[currentQuestion.id] ?? null}
@@ -204,14 +207,15 @@ export default function Exam() {
               />
             </div>
 
-            <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-4">
+            {/* Navigation Buttons */}
+            <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-3 md:gap-4 w-full">
               <Button 
                 variant="outline" 
                 onClick={handlePrev}
                 disabled={currentQuestionIndex === 0}
-                className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5"
+                className="flex-1 sm:flex-none sm:w-28 md:w-32 text-xs sm:text-sm py-2 sm:py-2.5 whitespace-nowrap"
               >
-                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-2" />
+                <ChevronLeft className="w-3 h-3 sm:w-4 sm:h-4 mr-1 sm:mr-1.5 flex-shrink-0" />
                 <span className="hidden sm:inline">Previous</span>
                 <span className="sm:hidden">Prev</span>
               </Button>
@@ -219,8 +223,8 @@ export default function Exam() {
               {currentQuestionIndex === totalQuestions - 1 ? (
                 <AlertDialog>
                   <AlertDialogTrigger asChild>
-                    <Button className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5" variant="default">
-                      <span className="hidden sm:inline">Submit Exam</span>
+                    <Button className="flex-1 sm:flex-none sm:w-28 md:w-32 text-xs sm:text-sm py-2 sm:py-2.5 whitespace-nowrap" variant="default">
+                      <span className="hidden sm:inline">Submit</span>
                       <span className="sm:hidden">Submit</span>
                     </Button>
                   </AlertDialogTrigger>
@@ -241,27 +245,26 @@ export default function Exam() {
               ) : (
                 <Button 
                   onClick={handleNext}
-                  className="flex-1 sm:flex-none sm:w-32 text-xs sm:text-sm py-2 sm:py-2.5"
+                  className="flex-1 sm:flex-none sm:w-28 md:w-32 text-xs sm:text-sm py-2 sm:py-2.5 whitespace-nowrap"
                 >
-                  <span className="hidden sm:inline">Next</span>
-                  <span className="sm:hidden">Next</span>
-                  <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-2" />
+                  <span>Next</span>
+                  <ChevronRight className="w-3 h-3 sm:w-4 sm:h-4 ml-1 sm:ml-1.5 flex-shrink-0" />
                 </Button>
               )}
             </div>
             
             {/* Mobile Navigator (Visible only on small screens) */}
-            <div className="mt-4 sm:mt-6 lg:hidden">
-               <p className="text-xs text-muted-foreground mb-2">Unit {Math.floor(currentQuestionIndex / 6) + 1}: Jump to question</p>
-               <div className="flex overflow-x-auto gap-1.5 pb-2">
+            <div className="mt-4 sm:mt-5 md:mt-6 lg:hidden w-full">
+               <p className="text-xs text-muted-foreground mb-2 truncate">Unit {Math.floor(currentQuestionIndex / 6) + 1} · Jump to question</p>
+               <div className="flex overflow-x-auto gap-1 pb-1.5 -mx-2 px-2 sm:gap-1.5 sm:pb-2 sm:mx-0 sm:px-0">
                  {questions.map((q, idx) => (
                     <button
                       key={q.id}
                       onClick={() => setCurrentQuestionIndex(idx)}
                       className={`
-                        flex-shrink-0 h-7 w-7 rounded-md text-[10px] font-medium border transition-all
-                        ${idx === currentQuestionIndex ? 'border-primary bg-primary/10 text-primary ring-1 ring-primary' : 'border-border bg-background'}
-                        ${answers[q.id] !== undefined ? 'bg-primary/5' : ''}
+                        flex-shrink-0 h-8 w-8 rounded-md text-xs font-semibold border transition-all
+                        ${idx === currentQuestionIndex ? 'border-primary bg-primary text-primary-foreground ring-1 ring-primary ring-offset-1' : 'border-border/50 bg-background hover:border-primary/50'}
+                        ${answers[q.id] !== undefined && idx !== currentQuestionIndex ? 'bg-primary/10 border-primary/30' : ''}
                       `}
                       title={`Question ${idx + 1}`}
                     >
