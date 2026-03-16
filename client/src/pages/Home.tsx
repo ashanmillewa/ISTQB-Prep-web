@@ -103,7 +103,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="mt-auto py-8 border-t border-border/40 text-center text-sm text-muted-foreground">
         <div className="container mx-auto px-4">
-          <p>© 2026 ISTQB Prep Academy. Not affiliated with official ISTQB.</p>
+          <p>© 2026 ISTQB Preparation.</p>
         </div>
       </footer>
     </div>
