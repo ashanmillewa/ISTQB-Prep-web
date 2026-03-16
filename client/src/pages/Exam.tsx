@@ -229,7 +229,7 @@ export default function Exam() {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-between gap-2 sm:gap-3 md:gap-4 w-full">
+            <div className="flex flex-row items-center justify-between gap-2 sm:gap-3 md:gap-4 w-full">
               <Button 
                 variant="outline" 
                 onClick={handlePrev}
