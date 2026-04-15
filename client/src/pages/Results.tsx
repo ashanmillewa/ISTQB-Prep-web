@@ -11,7 +11,7 @@ import { Question, samplePapers } from "@/data/mockData";
 interface ExamResult {
   score: number;
   total: number;
-  answers: Record<number, number>;
+  answers: Record<number, number | number[]>;
   questions: Question[];
   paperId?: string;
 }
@@ -32,7 +32,7 @@ export default function Results() {
   if (!results) return null;
 
   const percentage = Math.round((results.score / results.total) * 100);
-  const isPassed = percentage >= 65; // ISTQB Pass mark is 65%
+  const isPassed = percentage >= 50; // ISTQB Pass mark is 65%
   const paperLink = results.paperId ? `/exam?paper=${results.paperId}` : '/exam';
 
   return (
@@ -110,7 +110,9 @@ export default function Results() {
           <Accordion type="single" collapsible className="w-full">
             {results.questions.map((q, idx) => {
               const userAnswer = results.answers[q.id];
-              const isCorrect = userAnswer === q.correctAnswer;
+              const isCorrect = Array.isArray(userAnswer) && q.correctAnswers 
+                ? userAnswer.length === q.correctAnswers.length && q.correctAnswers.every(ans => userAnswer.includes(ans))
+                : userAnswer === q.correctAnswer;
               const isSkipped = userAnswer === undefined;
 
               return (
@@ -124,7 +126,7 @@ export default function Results() {
                       </div>
                       <div className="flex-grow">
                         <span className="text-sm font-medium text-muted-foreground mr-2">Q{idx + 1}.</span>
-                        <span className="font-medium text-foreground">{q.text}</span>
+                        <span className="font-['Calibri',_'Segoe_UI',_'Arial',_sans-serif] font-medium text-foreground whitespace-pre-wrap">{q.text}</span>
                       </div>
                     </div>
                   </AccordionTrigger>
@@ -135,21 +137,25 @@ export default function Results() {
                           <div 
                             key={optIdx}
                             className={`p-3 rounded-md text-sm border flex items-center justify-between
-                              ${optIdx === q.correctAnswer ? "bg-green-50 border-green-200 text-green-900" : ""}
-                              ${optIdx === userAnswer && optIdx !== q.correctAnswer ? "bg-red-50 border-red-200 text-red-900" : ""}
-                              ${optIdx !== q.correctAnswer && optIdx !== userAnswer ? "bg-background border-border" : ""}
+                              ${(q.correctAnswers?.includes(optIdx) || (!q.correctAnswers && optIdx === q.correctAnswer)) ? "bg-green-50 border-green-200 text-green-900" : ""}
+                              ${((Array.isArray(userAnswer) ? userAnswer.includes(optIdx) : optIdx === userAnswer) && !(q.correctAnswers?.includes(optIdx) || (!q.correctAnswers && optIdx === q.correctAnswer))) ? "bg-red-50 border-red-200 text-red-900" : ""}
+                              ${!((q.correctAnswers?.includes(optIdx) || (!q.correctAnswers && optIdx === q.correctAnswer))) && !(Array.isArray(userAnswer) ? userAnswer.includes(optIdx) : optIdx === userAnswer) ? "bg-background border-border" : ""}
                             `}
                           >
-                            <span>{opt}</span>
-                            {optIdx === q.correctAnswer && <span className="text-xs font-bold text-green-600 uppercase">Correct Answer</span>}
-                            {optIdx === userAnswer && optIdx !== q.correctAnswer && <span className="text-xs font-bold text-red-600 uppercase">Your Answer</span>}
+                            <span className="font-['Calibri',_'Segoe_UI',_'Arial',_sans-serif] whitespace-pre-wrap"><span className="mr-2">{String.fromCharCode(97 + optIdx)})</span>{opt}</span>
+                            {(q.correctAnswers?.includes(optIdx) || (!q.correctAnswers && optIdx === q.correctAnswer)) && <span className="text-xs font-bold text-green-600 uppercase">Correct Answer</span>}
+                            {((Array.isArray(userAnswer) ? userAnswer.includes(optIdx) : optIdx === userAnswer) && !(q.correctAnswers?.includes(optIdx) || (!q.correctAnswers && optIdx === q.correctAnswer))) && <span className="text-xs font-bold text-red-600 uppercase">Your Answer</span>}
                           </div>
                         ))}
                       </div>
                       
                       <div className="bg-blue-50 border border-blue-100 rounded-md p-4 text-sm text-blue-900">
                         <span className="font-bold block mb-1">Explanation:</span>
-                        {q.explanation}
+                        <div className="space-y-2">
+                          {q.explanation.split(/(?=[a-z]\) )/).map((part, index) => (
+                            <p key={index}>{part.trim()}</p>
+                          ))}
+                        </div>
                       </div>
                       
                       <div className="text-xs text-muted-foreground">

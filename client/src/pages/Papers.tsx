@@ -22,7 +22,7 @@ export default function Papers() {
             {samplePapers.map((paper) => (
               <Card key={paper.id} className="group hover:border-primary/50 transition-colors">
                 <CardHeader className="flex flex-row items-center gap-4">
-                  <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <div className="p-3 rounded-lg bg-red-500/10 text-red-500 group-hover:bg-red-500 group-hover:text-red-50 transition-colors">
                     <FileText className="w-6 h-6" />
                   </div>
                   <div className="flex-grow">

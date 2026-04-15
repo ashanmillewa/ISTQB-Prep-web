@@ -35,7 +35,7 @@ export default function Exam() {
   const questions = currentPaper.questions;
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [answers, setAnswers] = useState<Record<number, number | number[]>>({});
   const [flaggedQuestions, setFlaggedQuestions] = useState<Set<number>>(new Set());
   const [isExamActive, setIsExamActive] = useState(true);
 
@@ -53,14 +53,48 @@ export default function Exam() {
     return () => clearTimeout(timer);
   }, [currentQuestionIndex]);
 
-  const totalQuestions = questions.length;
-  const currentQuestion = questions[currentQuestionIndex];
+  const totalQuestions = questions?.length || 0;
+  const currentQuestion = questions?.[currentQuestionIndex];
 
-  const handleSelectAnswer = (optionIndex: number) => {
-    setAnswers(prev => ({
-      ...prev,
-      [currentQuestion.id]: optionIndex
-    }));
+  // Return early if no questions are loaded yet
+  if (!currentQuestion) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-background">
+        <div className="text-center p-8 max-w-md w-full bg-card rounded-lg shadow-sm border border-border">
+          <h2 className="text-xl font-bold mb-4">Paper Not Found</h2>
+          <p className="text-muted-foreground mb-6">Sorry, we couldn't load the questions for this paper.</p>
+          <Button onClick={() => setLocation('/papers')}>Return to Papers</Button>
+        </div>
+      </div>
+    );
+  }
+
+  const handleSelectAnswer = (optionIndex: number, isMultiSelect: boolean = false) => {
+    setAnswers(prev => {
+      const currentAnswer = prev[currentQuestion.id];
+      
+      if (isMultiSelect) {
+        let newAnswer: number[] = [];
+        if (Array.isArray(currentAnswer)) {
+          if (currentAnswer.includes(optionIndex)) {
+            newAnswer = currentAnswer.filter(idx => idx !== optionIndex);
+          } else {
+            newAnswer = [...currentAnswer, optionIndex];
+            // If they select more than 2, remove the oldest one (assuming questions ask for "TWO")
+            if (newAnswer.length > 2) {
+              newAnswer.shift();
+            }
+          }
+        } else if (currentAnswer !== undefined) {
+          newAnswer = [currentAnswer, optionIndex];
+        } else {
+          newAnswer = [optionIndex];
+        }
+        return { ...prev, [currentQuestion.id]: newAnswer };
+      }
+      
+      return { ...prev, [currentQuestion.id]: optionIndex };
+    });
   };
 
   const toggleFlag = () => {
@@ -93,7 +127,16 @@ export default function Exam() {
     // Calculate score
     let score = 0;
     questions.forEach(q => {
-      if (answers[q.id] === q.correctAnswer) score++;
+      const answer = answers[q.id];
+      if (Array.isArray(answer) && q.correctAnswers) {
+        // Multi-select question
+        const isCorrect = answer.length === q.correctAnswers.length && 
+                          q.correctAnswers.every(ans => answer.includes(ans));
+        if (isCorrect) score++;
+      } else if (answer === q.correctAnswer) {
+        // Single select question
+        score++;
+      }
     });
 
     const results = {
@@ -131,7 +174,7 @@ export default function Exam() {
                 <div className="space-y-4">
                   {[
                     { name: "Unit 1: Fundamentals of Testing", range: [0, 8] },
-                    { name: "Unit 2: Testing Throughout the S D L C", range: [8, 14] },
+                    { name: "Unit 2: Testing Throughout the SDLC", range: [8, 14] },
                     { name: "Unit 3: Static Testing", range: [14, 18] },
                     { name: "Unit 4: Test Analysis and Design", range: [18, 29] },
                     { name: "Unit 5: Managing the Test Activities", range: [29, 38] },
@@ -193,6 +236,9 @@ export default function Exam() {
               </div>
               
               <div className="flex items-center gap-2 sm:gap-3 justify-between sm:justify-end flex-shrink-0 w-full sm:w-auto">
+                <div className="hidden sm:flex items-center text-sm font-medium text-muted-foreground mr-2">
+                  {currentPaper?.title || "Exam Paper"}
+                </div>
                 <ExamTimer 
                   durationSeconds={60 * 60}
                   onTimeUp={handleSubmit}

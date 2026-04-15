@@ -90,7 +90,7 @@ export default function AboutISTQB() {
                 <CardContent className="p-8 md:p-12">
                   <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div className="space-y-6">
-                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold uppercase tracking-wider">
                         <ShieldCheck className="w-4 h-4" />
                         Global Standard
                       </div>

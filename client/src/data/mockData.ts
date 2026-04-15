@@ -6,6 +6,7 @@ export interface Question {
   text: string;
   options: string[];
   correctAnswer: number;
+  correctAnswers?: number[];
   explanation: string;
   category: string;
   image?: string;
@@ -25,7 +26,8 @@ const mergeData = (paperId: string): Question[] => {
     const answer = aData.find(a => a.questionId === q.id);
     return {
       ...q,
-      correctAnswer: answer?.correctAnswer ?? 0,
+      correctAnswer: answer?.correctAnswer ?? (answer?.correctAnswers?.length === 1 ? answer.correctAnswers[0] : 0),
+      correctAnswers: answer?.correctAnswers,
       explanation: answer?.explanation ?? "",
       image: q.image
     };
@@ -35,22 +37,22 @@ const mergeData = (paperId: string): Question[] => {
 export const samplePapers: Paper[] = [
   {
     id: "paper-a",
-    title: "Sample Exam Set A (v4.0)",
+    title: "Sample Paper A (v4.0)",
     questions: mergeData("paper-a")
   },
   {
     id: "paper-b",
-    title: "Sample Exam Set B (v4.0)",
+    title: "Sample Paper B (v4.0)",
     questions: mergeData("paper-b")
   },
   {
     id: "paper-c",
-    title: "Sample Exam Set C (v4.0)",
+    title: "Sample Paper C (v4.0)",
     questions: mergeData("paper-c")
   },
   {
     id: "paper-d",
-    title: "Sample Exam Set D (v4.0)",
+    title: "Sample Paper D (v4.0)",
     questions: mergeData("paper-d")
   }
 ];
