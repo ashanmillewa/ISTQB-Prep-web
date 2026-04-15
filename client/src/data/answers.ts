@@ -760,8 +760,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 150,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1, 3],
+      explanation: "Exit criteria define the conditions that allow testing to stop. a) 'Budget is approved' is an entry criterion (a precondition for testing to begin), not an exit criterion. b) Is correct. 'Budget runs out' is a valid exit criterion — when resources are exhausted, testing must stop regardless of completion. c) 'Test basis is available' is an entry criterion (testing cannot begin without it). d) Is correct. 'Test cases achieved at least 80% statement coverage' is a measurable exit criterion — achieving a defined coverage target is a common and valid condition for concluding testing. e) ISTQB certification of analysts is a project resource concern, not an exit criterion for testing activities."
     },
     {
       questionId: 151,
@@ -785,8 +785,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 155,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1, 4],
+      explanation: "Product risks relate to potential quality problems in the software itself (the product). Project risks relate to management, resources, or process issues. a) Scope creep is a project risk — it affects the project schedule and budget, not the product quality directly. b) Is correct. Poor architecture is a product risk — it directly affects the maintainability, performance, and reliability of the software product. c) Cost-cutting is a project risk — it affects project resources and decisions, not a quality characteristic of the product. d) Poor tool support is a project risk — it concerns the development or testing process, not the product itself. e) Is correct. Too long response time is a product risk — it is a performance quality characteristic of the product that could fail to meet user needs."
     },
     {
       questionId: 156,

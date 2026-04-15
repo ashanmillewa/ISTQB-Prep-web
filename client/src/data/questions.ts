@@ -1789,7 +1789,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "All test analysts are ISTQB certified at the Foundation Level"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1, 3]
     },
     {
       id: 151,
@@ -1850,7 +1850,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Too long response time"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1, 4]
     },
     {
       id: 156,
