@@ -620,8 +620,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 122,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [3],
+      explanation: "a) Is not correct. The miscalculation of bonuses is a failure (the system produces incorrect output at runtime), not a defect. The defect is the missing exception handling in the code. b) Is not correct. The fine is a business/legal consequence of the failure, not a failure itself in ISTQB terms. A failure is when a component or system does not perform a required function within specified limits. c) Is not correct. Time pressure is a root cause, but 'the programmer working under time pressure' describes a human context — the root cause is the condition (time pressure), not the person. d) Is correct. An error is a human action that produces an incorrect result. The designer, due to tiredness, made an error which is embedded in the design of the user interface — the design does not suitably address disabled users."
     },
     {
       questionId: 123,
