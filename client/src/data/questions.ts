@@ -1443,7 +1443,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 122,
-      text: "A designer documents a design for a user interface that does not suitably address disabled users\nbecause the designer is tired. The programmer implements the user interface in line with the\ndesign but as they are working under severe time pressure, they do not include suitable exception\nhandling in their program code for bonus calculations. When the operational system is used,\ncomplaints are made by some disabled users about the interface and the company is subsequently\nfined by the relevant regulatory authority. No one notices that bonus calculations are sometimes\nincorrect.\n\nWhich of the following statements is CORRECT?",
+      text: "A designer documents a design for a user interface that does not suitably address disabled users because the designer is tired. The programmer implements the user interface in line with the design but as they are working under severe time pressure, they do not include suitable exception handling in their program code for bonus calculations. When the operational system is used, complaints are made by some disabled users about the interface and the company is subsequently fined by the relevant regulatory authority. No one notices that bonus calculations are sometimes incorrect.\n\nWhich of the following statements is CORRECT?",
       options: [
         "The miscalculation of bonuses is a defect that occasionally occurs",
         "The fine received for failing to address some disabled users is a failure",
@@ -1451,7 +1451,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "The design of the user interface includes a designer error"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 123,
