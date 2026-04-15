@@ -615,12 +615,12 @@ export const answersData: Record<string, AnswerData[]> = {
   "paper-d": [
     {
       questionId: 121,
-      correctAnswers: [0],
+      correctAnswers: [3],
       explanation: "Explanation not found."
     },
     {
       questionId: 122,
-      correctAnswers: [3],
+      correctAnswers: [2],
       explanation: "a) Is not correct. The miscalculation of bonuses is a failure (the system produces incorrect output at runtime), not a defect. The defect is the missing exception handling in the code. b) Is not correct. The fine is a business/legal consequence of the failure, not a failure itself in ISTQB terms. A failure is when a component or system does not perform a required function within specified limits. c) Is not correct. Time pressure is a root cause, but 'the programmer working under time pressure' describes a human context — the root cause is the condition (time pressure), not the person. d) Is correct. An error is a human action that produces an incorrect result. The designer, due to tiredness, made an error which is embedded in the design of the user interface — the design does not suitably address disabled users."
     },
     {
@@ -630,7 +630,7 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 124,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -640,7 +640,7 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 126,
-      correctAnswers: [0],
+      correctAnswers: [3],
       explanation: "Explanation not found."
     },
     {
@@ -650,7 +650,7 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 128,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -665,12 +665,12 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 131,
-      correctAnswers: [0],
+      correctAnswers: [3],
       explanation: "Explanation not found."
     },
     {
       questionId: 132,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -685,17 +685,17 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 135,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
     {
       questionId: 136,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
     {
       questionId: 137,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -725,7 +725,7 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 143,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -740,17 +740,17 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 146,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
     {
       questionId: 147,
-      correctAnswers: [0],
+      correctAnswers: [3],
       explanation: "Explanation not found."
     },
     {
       questionId: 148,
-      correctAnswers: [0],
+      correctAnswers: [3],
       explanation: "Explanation not found."
     },
     {
@@ -775,12 +775,12 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 153,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
     {
       questionId: 154,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
@@ -790,7 +790,7 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 156,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
     {
@@ -805,12 +805,12 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 159,
-      correctAnswers: [0],
+      correctAnswers: [1],
       explanation: "Explanation not found."
     },
     {
       questionId: 160,
-      correctAnswers: [0],
+      correctAnswers: [2],
       explanation: "Explanation not found."
     },
   ]

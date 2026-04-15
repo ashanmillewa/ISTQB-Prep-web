@@ -1439,7 +1439,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Building confidence in the quality of the test object"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 122,
@@ -1451,7 +1451,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "The design of the user interface includes a designer error"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [3]
+      correctAnswers: [2]
     },
     {
       id: 123,
@@ -1475,7 +1475,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "1C, 2D, 3A, 4B"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 125,
@@ -1499,7 +1499,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Create the test completion report"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 127,
@@ -1523,7 +1523,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "ii, iii, v"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 129,
@@ -1559,7 +1559,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Setting up the test automation as part of the delivery pipeline"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 132,
@@ -1571,7 +1571,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Retrospectives give agile team members a forum where they focus on discussing the plan and technical decisions for the next iteration"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 133,
@@ -1607,7 +1607,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Test charter"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 136,
@@ -1619,7 +1619,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Static testing can identify the defect types that can be found by dynamic testing as well as some extra defect types"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 137,
@@ -1631,7 +1631,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "5–4–3–2–1"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 138,
@@ -1704,7 +1704,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "NotAvailable, Cancel, ChangeRoom, Available, Pay"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 144,
@@ -1740,7 +1740,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "The accuracy of the interest calculated by the system is not precise enough"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 147,
@@ -1752,7 +1752,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "During exploratory testing the tester may use black-box test techniques"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 148,
@@ -1764,7 +1764,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Conversation, so that team members can understand how the software will be used"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 149,
@@ -1825,7 +1825,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "They help agile teams to develop a communication strategy based on classifying people according to four basic psychological types, and on modelling the relations between them Select ONE options."
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 154,
@@ -1837,7 +1837,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "$200 Select ONE options."
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 155,
@@ -1862,7 +1862,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Providing information on testing planned for the next period Select ONE options."
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 157,
@@ -1898,7 +1898,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "ii, iii, iv Select ONE options."
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 160,
@@ -1910,7 +1910,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Substantially reduced test execution times Select ONE options."
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
   ]
 };
