@@ -1587,7 +1587,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 134,
-      text: "Which of the following is MOST likely to be a trigger that leads to maintenance testing of a\ncurrency exchange system?",
+      text: "Which of the following is MOST likely to be a trigger that leads to maintenance testing of a currency exchange system?",
       options: [
         "The developers reported that changing the currency exchange system was difficult and the testers decided to check if this was true",
         "The refund option of the currency exchange system was removed as it did not always repay the correct amount to customers",
@@ -1595,7 +1595,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "The language support option of the currency exchange system was used to enable both English and local language currency transactions"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 135,
@@ -1635,7 +1635,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 138,
-      text: "Which participant in the review process is responsible for ensuring that the review meetings run\neffectively and that everyone at the meetings can voice their opinions freely?",
+      text: "Which participant in the review process is responsible for ensuring that the review meetings run effectively and that everyone at the meetings can voice their opinions freely?",
       options: [
         "Manager",
         "Moderator",
@@ -1643,11 +1643,11 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Review Leader"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 139,
-      text: "You perform system testing of an e-commerce web application and are provided with the following\nrequirement:\nREQ 05-017. If the total cost of purchases exceeds $100, the customer gets a 5%\ndiscount on subsequent purchases. Otherwise, the customer does not receive a\ndiscount.\n\nWhich test techniques will be MOST helpful in designing test cases based on this requirement?",
+      text: "You perform system testing of an e-commerce web application and are provided with the following requirement:\n\nREQ 05-017. If the total cost of purchases exceeds $100, the customer gets a 5% discount on subsequent purchases. Otherwise, the customer does not receive a discount.\n\nWhich test techniques will be MOST helpful in designing test cases based on this requirement?",
       options: [
         "White-box test techniques",
         "Black-box test techniques",
@@ -1655,7 +1655,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Risk-based test techniques"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 140,
@@ -1680,7 +1680,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "–2, 0, 2, 4"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 142,
@@ -1716,7 +1716,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "After removing one test case from S, the remaining two test cases will still achieve 100% statement coverage"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [2]
     },
     {
       id: 145,
@@ -1810,10 +1810,10 @@ export const questionsData: Record<string, QuestionData[]> = {
         "TC1",
         "TC2",
         "TC3",
-        "TC4 Select ONE options."
+        "TC4"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [1]
     },
     {
       id: 153,
@@ -1871,10 +1871,10 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Risk management",
         "Test monitoring and control",
         "Whole team approach",
-        "Configuration management Select ONE options."
+        "Configuration management"
       ],
       category: "Fundamentals of Testing",
-      correctAnswers: [0]
+      correctAnswers: [3]
     },
     {
       id: 158,

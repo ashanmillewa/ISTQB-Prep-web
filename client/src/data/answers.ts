@@ -626,7 +626,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 123,
       correctAnswers: [0],
-      explanation: "Explanation not found."
+      explanation: "a) Is correct. 'Tests wear out' (also known as the pesticide paradox) states that if the same tests are repeated over and over, they will no longer find new defects. To overcome this, test cases should be regularly reviewed and revised, and new and different tests should be written to exercise different parts of the software. Varying test cases while keeping the same test conditions directly addresses this principle. b) The absence-of-defects fallacy is about fixing defects not necessarily producing a useful product. c) Early testing addresses cost efficiency of finding defects early. d) Defects cluster together relates to the distribution of defects, not test variation."
     },
     {
       questionId: 124,
@@ -680,8 +680,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 134,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1],
+      explanation: "a) Is not correct. Developers finding a system difficult to change is a maintainability concern, not a maintenance testing trigger. b) Is correct. The removal of the refund option because it produced incorrect results is a planned modification (deletion) to an operational system. This is a classic trigger for maintenance testing — the team must verify the removal and check for unintended impacts on other functionality. c) Is not correct. An agile team starting development of a new user story describes new feature development, not maintenance of an existing released system. d) Is not correct. Using the language support feature that already exists is normal operation, not a modification that would trigger maintenance testing."
     },
     {
       questionId: 135,
@@ -700,13 +700,13 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 138,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1],
+      explanation: "a) Is not correct. The manager decides on the execution of reviews and provides resources, but does not facilitate the meeting itself. b) Is correct. The moderator (facilitator) is responsible for ensuring review meetings run effectively. This includes ensuring that all participants can voice their opinions freely, managing the meeting dynamics, and keeping the review on track. c) Is not correct. 'Chairperson' is not a defined role in the ISTQB review process. d) Is not correct. The review leader plans and organises the review but the moderator facilitates the actual meeting sessions."
     },
     {
       questionId: 139,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1],
+      explanation: "a) Is not correct. White-box test techniques are based on the internal structure or code of the test object, not on external requirements or specifications. b) Is correct. Black-box test techniques are based on specifications, requirements, and expected behaviour without reference to internal code. REQ 05-017 is a clear business rule specification (input/output behaviour), making black-box techniques such as equivalence partitioning and boundary value analysis the most appropriate for designing test cases. c) Is not correct. Experience-based techniques are used when specifications are missing or incomplete, which is not the case here. d) Is not correct. Risk-based testing is a strategy for prioritising tests, not a technique for designing test cases from requirements."
     },
     {
       questionId: 140,
@@ -715,8 +715,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 141,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [2],
+      explanation: "Two-value boundary value analysis (BVA) tests the boundary value itself and the value just beyond the boundary. The system has two boundaries: the lower boundary at 0°C and the upper boundary at 2°C. a) –1, 3: tests one value just below each boundary but misses the actual boundary values (0 and 2). b) 0, 2: tests only the boundary values themselves but misses the values just outside each boundary (–1 and 3). c) –1, 0, 2, 3: Is correct. This covers both boundaries (0 and 2) AND the values just outside each boundary (–1 just below 0, and 3 just above 2), giving complete two-value BVA coverage. d) –2, 0, 2, 4: Tests boundary values (0 and 2) but the values –2 and 4 are two steps away from the boundaries, not the immediate adjacent values required for two-value BVA."
     },
     {
       questionId: 142,
@@ -730,13 +730,13 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 144,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [2],
+      explanation: "a) Is not correct. 100% statement coverage means every statement was executed, but not every possible failure is guaranteed to be found — some defects only manifest under specific conditions that the test cases may not cover. b) Is not correct. 100% statement coverage does not imply 100% branch coverage; a statement can be executed without testing all possible decision outcomes. c) Is correct. By definition, 100% statement coverage means every executable statement in P has been run at least once. Therefore, any statement that contains a defect will also have been executed at least once. d) Is not correct. Although each test case achieves 50% coverage and they overlap, removing one of three test cases does not guarantee the remaining two still cover all statements — there may be statements only covered by the removed test case."
     },
     {
       questionId: 145,
       correctAnswers: [0],
-      explanation: "Explanation not found."
+      explanation: "a) Is correct. White-box test techniques derive tests from the internal structure (code) of the test object rather than from the specification. This means test cases can be created even when the specification is vague, outdated or incomplete, because the tester analyses the actual code paths, branches, and statements to be tested. b) Is not correct. While coverage measurement is an advantage of white-box testing, this does not explain why it works when the specification is poor. c) Is not correct. White-box techniques are actually poor at detecting omissions in requirements, since they rely on what is in the code, not what should be there. d) Is not correct. White-box techniques apply to dynamic testing and some static analysis, but this does not explain defect detection when specifications are incomplete."
     },
     {
       questionId: 146,
@@ -766,12 +766,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 151,
       correctAnswers: [0],
-      explanation: "Explanation not found."
+      explanation: "Using the three-point estimation formula: E = (O + 4M + P) / 6, where O = optimistic (best case) = 1h, M = most likely = 3h, P = pessimistic (worst case) = 8h. For one test case: E = (1 + 4×3 + 8) / 6 = (1 + 12 + 8) / 6 = 21 / 6 = 3.5 hours. For four test cases: 3.5 × 4 = 14 hours. b) 3.5 hours is the estimate for a single test case, not all four. c) 16 hours would result from simply multiplying the most likely estimate by 4 without applying the three-point formula correctly (4 × 4 = 16). d) 12 hours would result from 4 × 3 (most likely only), ignoring the weighted average formula."
     },
     {
       questionId: 152,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [1],
+      explanation: "Additional coverage prioritization selects the test case that covers the most additional (previously uncovered) requirements in each round. TC1 covers Req1, Req3, Req4, Req7 (4 requirements) → executed first. After TC1, uncovered: Req2, Req5, Req6. TC3 covers Req5 and Req6 (2 new) → executed second. After TC3, uncovered: Req2. TC4 covers Req2 (1 new) → executed third. TC2 covers Req1, Req5, Req7 — all already covered (0 new) → executed last. Therefore TC2 should be executed last, as it provides no additional requirement coverage after the other three test cases have been executed."
     },
     {
       questionId: 153,
@@ -795,8 +795,8 @@ export const answersData: Record<string, AnswerData[]> = {
     },
     {
       questionId: 157,
-      correctAnswers: [0],
-      explanation: "Explanation not found."
+      correctAnswers: [3],
+      explanation: "a) Is not correct. Risk management identifies, analyses and mitigates risks to the project, but it does not enable the reassembly of specific software versions. b) Is not correct. Test monitoring and control tracks test progress and makes corrections, but does not manage software versions or file assemblies. c) Is not correct. The whole team approach encourages collaboration across all team members but is not responsible for version tracking and file assembly. d) Is correct. Configuration management is the discipline that maintains information about the version of work products (including software builds and releases). By recording the version number and the associated set of files, the team was able to reassemble the exact release — this is a fundamental outcome of effective configuration management."
     },
     {
       questionId: 158,
