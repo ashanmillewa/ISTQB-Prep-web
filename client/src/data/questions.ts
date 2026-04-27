@@ -1661,7 +1661,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 140,
-      text: "The system for selling cinema tickets calculates the discount type based on the client’s birth year\n(BY) and on the current year (CY) as follows:\n\nLet D be the difference between CY and BY, that is, D = CY – BY\n• If D < 0            then print the error message “birth year cannot be greater than\ncurrent year”\n• If 0 ≤ D < 18       then apply the student discount\n• If 18 ≤ D < 65      then apply no discount\n• If D ≥ 65           then apply the pensioner discount\nYour test suite already contains two test cases:\n• BY = 1990, CY = 2020,            expected result: no discount\n• BY = 2030, CY = 2029,            expected result: print the error message\nWhich of the following test data sets should be added to achieve full valid equivalence partitioning\ncoverage for the discount type?",
+      text: "The system for selling cinema tickets calculates the discount type based on the client's birth year (BY) and on the current year (CY) as follows: ||| Which of the following test data sets should be added to achieve full valid equivalence partitioning coverage for the discount type?",
       options: [
         "BY = 2001, CY = 2065",
         "BY = 1900, CY = 1965",
@@ -1670,6 +1670,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "BY = 2000, CY = 2000"
       ],
       category: "Fundamentals of Testing",
+      image: "/src/assets/images/paper-d-q20.png",
       correctAnswers: [1, 4]
     },
     {
