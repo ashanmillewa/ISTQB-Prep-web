@@ -1515,7 +1515,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 128,
-      text: "Given the following benefits and drawbacks of the independence of testing:\n\nWhich are MOST likely to be considered benefits?",
+      text: "Given the following benefits and drawbacks of the independence of testing: ||| Which are MOST likely to be considered benefits?",
       options: [
         "i, iv",
         "ii, v",
@@ -1624,7 +1624,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 137,
-      text: "Given the following descriptions of review activities:\n\nWhich of the following is the CORRECT sequence in the review process of the activities that correspond to the descriptions?",
+      text: "Given the following descriptions of review activities: ||| Which of the following is the CORRECT sequence in the review process of the activities that correspond to the descriptions?",
       options: [
         "4–3–5–2–1",
         "4–5–3–1–2",
