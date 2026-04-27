@@ -1632,6 +1632,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "5–4–3–2–1"
       ],
       category: "Fundamentals of Testing",
+      image: "/src/assets/images/paper-d-q17.png",
       correctAnswers: [1]
     },
     {
