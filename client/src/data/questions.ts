@@ -1675,7 +1675,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 141,
-      text: "You are testing a temperature control system for a horticultural cold storage facility. The system\nreceives the temperature (in full degrees Celsius) as the input. If the temperature is between 0 and\n2 degrees inclusive, the system displays the message “temperature OK”. For lower temperatures,\nthe system displays the message \"temperature too low\" and for higher temperatures it displays the\nmessage “temperature too high”.\n\nUsing two-value boundary value analysis, which of the following sets of test inputs provides the\nhighest level of boundary value coverage?",
+      text: "You are testing a temperature control system for a horticultural cold storage facility. The system receives the temperature (in full degrees Celsius) as the input. If the temperature is between 0 and 2 degrees inclusive, the system displays the message \"temperature OK\". For lower temperatures, the system displays the message \"temperature too low\" and for higher temperatures it displays the message \"temperature too high\".\n\nUsing two-value boundary value analysis, which of the following sets of test inputs provides the highest level of boundary value coverage?",
       options: [
         "–1, 3",
         "0, 2",
