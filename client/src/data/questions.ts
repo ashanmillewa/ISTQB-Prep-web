@@ -1799,7 +1799,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 151,
-      text: "The team wants to estimate the time needed for one tester to execute four test cases for a software component. The team has gathered the following measures of the effort used to execute a single test case:\n\u2022 Best-case scenario:       1 hour\n\u2022 Worst-case scenario:      8 hours\n\u2022 Most likely scenario:     3 hours\n\nGiven that the three-point estimation technique is being used, what is the final estimate of the time needed to execute all four test cases?",
+      text: "The team wants to estimate the time needed for one tester to execute four test cases for a software component. The team has gathered the following measures of the effort used to execute a single test case: ||| Given that the three-point estimation technique is being used, what is the final estimate of the time needed to execute all four test cases?",
       options: [
         "14 hours",
         "3.5 hours",
@@ -1807,6 +1807,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "12 hours"
       ],
       category: "Fundamentals of Testing",
+      image: "/src/assets/images/paper-d-q31.png",
       correctAnswers: [0]
     },
     {
