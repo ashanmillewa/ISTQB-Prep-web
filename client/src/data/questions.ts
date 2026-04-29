@@ -1811,7 +1811,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 152,
-      text: "The table shows the traceability matrix from test cases to requirements. “X” means that a given test\ncase covers the corresponding requirement.\n\nReq1          Req2              Req3   Req4    Req5    Req6     Req7\nTC1             X                             X      X                        X\nTC2             X                                             X               X\nTC3                                                           X          X\nTC4                            X\nYou want to prioritize the test cases following the additional coverage prioritization technique.\n\nYou execute all four test cases.\n\nWhich test case should be executed as the LAST one?",
+      text: "The table shows the traceability matrix from test cases to requirements. "X" means that a given test case covers the corresponding requirement. ||| You want to prioritize the test cases following the additional coverage prioritization technique.\n\nYou execute all four test cases.\n\nWhich test case should be executed as the LAST one?",
       options: [
         "TC1",
         "TC2",
@@ -1819,6 +1819,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "TC4"
       ],
       category: "Fundamentals of Testing",
+      image: "/src/assets/images/paper-d-q32.png",
       correctAnswers: [1]
     },
     {
