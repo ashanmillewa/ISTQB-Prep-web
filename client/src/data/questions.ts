@@ -1773,7 +1773,7 @@ export const questionsData: Record<string, QuestionData[]> = {
     },
     {
       id: 149,
-      text: "You have just started designing test cases for the following user story.\n\nAs a customer,\nI want to be able to filter search results by price range, so that I can find products within my\nbudget more easily.\nAcceptance criteria:\n1. The filter should work for all versions of the application from version 3.0\nupwards\n2. The filter should allow the customer to set a price range with a minimum\nand a maximum price\n3. The search results should update dynamically as the customer adjusts the\nprice range filter\nIn all test cases the precondition is as follows: there are only two products available, products A\nand B. Product A costs $100 and product B costs $110.\n\nWhich of the following is the BEST example of a test case for this user story?",
+      text: "You have just started designing test cases for the following user story. ||| In all test cases the precondition is as follows: there are only two products available, products A and B. Product A costs $100 and product B costs $110.\n\nWhich of the following is the BEST example of a test case for this user story?",
       options: [
         "Enter webpage and set filter to show prices between $90 and $100. Expected result: results show product A only. Set maximum price to $110. Expected result: results now include both products A and B",
         "Enter webpage. Expected result: the default minimum and maximum prices are $100 and $110 respectively. Add product C to stock, with price $120. Refresh the client’s webpage. Expected result: the default maximum price changes to $120",
@@ -1781,6 +1781,7 @@ export const questionsData: Record<string, QuestionData[]> = {
         "Enter webpage with three different browsers: Edge, Chrome and Opera. In each browser set filter between $90 and $110. Expected result: results include both products A and B and the results layout is the same in all three browsers"
       ],
       category: "Fundamentals of Testing",
+      image: "/src/assets/images/paper-d-q29.png",
       correctAnswers: [0]
     },
     {
