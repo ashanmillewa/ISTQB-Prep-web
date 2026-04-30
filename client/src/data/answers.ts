@@ -30,7 +30,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 5,
       correctAnswers: [1],
-      explanation: "ii. Is false. The number of defects detected in previous projects may have some influence, but this is not as significant as i, iii and iv iii. Is true. The identified product risks are one of the most important factors influencing the test approach iv. Is true. Regulatory requirements are important factors influencing the test approach v. Is false. The test environment has no significant influence on the test approach Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q5.png] ii. Is false. The number of defects detected in previous projects may have some influence, but this is not as significant as i, iii and iv iii. Is true. The identified product risks are one of the most important factors influencing the test approach iv. Is true. Regulatory requirements are important factors influencing the test approach v. Is false. The test environment has no significant influence on the test approach Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 6,
@@ -40,7 +40,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 7,
       correctAnswers: [1],
-      explanation: "ii. Is false. This is a task of the business analyst together with the business representative iii. Is true. Being a good team player is an important skill iv. Is false. Planning and organizing the work of the team is a task of the test manager or, mostly in an Agile software development project, the whole team and not just the tester v. Is true. Critical thinking is one of the most important skills of testers Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q7.png] ii. Is false. This is a task of the business analyst together with the business representative iii. Is true. Being a good team player is an important skill iv. Is false. Planning and organizing the work of the team is a task of the test manager or, mostly in an Agile software development project, the whole team and not just the tester v. Is true. Critical thinking is one of the most important skills of testers Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 8,
@@ -75,7 +75,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 14,
       correctAnswers: [1],
-      explanation: "(4) and test (6) are confirmation tests. Because TC2 and TC3 failed in Execution 2 (i.e., tests (5) and (6)), test (8) and test (9) are also confirmation tests. TC2 passed in Execution 1 (i.e., test (2)), so test (5) is a regression test. TC1 passed in the Execution 2 (i.e., test (4)), so test (7) is also a regression test. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q14.png] (4) and test (6) are confirmation tests. Because TC2 and TC3 failed in Execution 2 (i.e., tests (5) and (6)), test (8) and test (9) are also confirmation tests. TC2 passed in Execution 1 (i.e., test (2)), so test (5) is a regression test. TC1 passed in the Execution 2 (i.e., test (4)), so test (7) is also a regression test. Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 15,
@@ -90,7 +90,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 17,
       correctAnswers: [1],
-      explanation: "• Specified for walkthroughs, technical reviews, and inspections; thus, the reviews being performed cannot be informal reviews • The purpose of evaluating quality is one of the most important objectives of a walkthrough • This is not allowed for inspections and is typically not done in technical reviews. A moderator is needed in walkthroughs and is allowed for informal reviews • All types of reviews can include individual preparation (even informal reviews) • All types of reviews can produce a review report, although informal reviews do not require documentation Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q17.png] • Specified for walkthroughs, technical reviews, and inspections; thus, the reviews being performed cannot be informal reviews • The purpose of evaluating quality is one of the most important objectives of a walkthrough • This is not allowed for inspections and is typically not done in technical reviews. A moderator is needed in walkthroughs and is allowed for informal reviews • All types of reviews can include individual preparation (even informal reviews) • All types of reviews can produce a review report, although informal reviews do not require documentation Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 18,
@@ -105,22 +105,22 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 20,
       correctAnswers: [1],
-      explanation: "choice” coverage. “Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. We need two more test cases to cover the two other “floor” partitions. The remaining ”garden type” partition of “no garden” is covered by these tests. We need a total of four test cases: TC1 (ground floor, small garden) TC2 (ground floor, large garden) TC3 (first floor, no garden) TC4 (second or higher floor, no garden) Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q20.png] choice” coverage. “Small garden” and “large garden” can go only with “ground floor”, so we need two test cases with “ground floor” which cover these two “garden type” partitions. We need two more test cases to cover the two other “floor” partitions. The remaining ”garden type” partition of “no garden” is covered by these tests. We need a total of four test cases: TC1 (ground floor, small garden) TC2 (ground floor, large garden) TC3 (first floor, no garden) TC4 (second or higher floor, no garden) Thus: a) Is not correct b) Is correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 21,
       correctAnswers: [0],
-      explanation: "70, 71, 80, 81, 90, 91, and 100. The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). Therefore, the test cases cover 6/12 = 50%. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q21.png] 70, 71, 80, 81, 90, 91, and 100. The test cases cover six of them (TC1 – 91, TC2 – 50, TC3 – 81, TC4 – 60, TC5 – 70 and TC7 – 51). Therefore, the test cases cover 6/12 = 50%. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 22,
       correctAnswers: [3],
-      explanation: "a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct"
+      explanation: "[img:paper-a-q22.png] a) Is not correct. A member without a missed deadline can get a discount and a gift T-Shirt after 15 bicycle rentals b) Is not correct. A member without a missed deadline can get a discount but no gift T-Shirt until they rented a bicycle 15 times c) Is not correct. Non-members cannot get a discount, even if they did not miss a deadline yet d) Is correct. No discount as a non-member that has also missed a deadline, but only members can receive a gift T-Shirt. Hence, the action is not correct"
     },
     {
       questionId: 23,
       correctAnswers: [3],
-      explanation: "Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: TC1: test, done TC2: run, error, done TC3: run, pause, resume, pause, done Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
+      explanation: "[img:paper-a-q23.png] Neither can both “done” transitions. This means we need at least three test cases to achieve transition coverage. For example: TC1: test, done TC2: run, error, done TC3: run, pause, resume, pause, done Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
     },
     {
       questionId: 24,
@@ -150,7 +150,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 29,
       correctAnswers: [0],
-      explanation: "a) Is correct. This test covers two acceptance criteria: one about editing the document and one about saving changes b) Is not correct. Acceptance criteria cover the editor activities, not the content owner activities c) Is not correct. Scheduling the edited content for publication may be a nice feature, but it is not covered by the acceptance criteria d) Is not correct. Acceptance criteria state about reassigning from an editor to the content owner, not to another editor"
+      explanation: "[img:paper-a-q29.png] a) Is correct. This test covers two acceptance criteria: one about editing the document and one about saving changes b) Is not correct. Acceptance criteria cover the editor activities, not the content owner activities c) Is not correct. Scheduling the edited content for publication may be a nice feature, but it is not covered by the acceptance criteria d) Is not correct. Acceptance criteria state about reassigning from an editor to the content owner, not to another editor"
     },
     {
       questionId: 30,
@@ -165,22 +165,22 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 32,
       correctAnswers: [3],
-      explanation: "E = (optimistic + 4*most likely + pessimistic)/6 E = (2+(4*11)+14)/6 = 10 Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
+      explanation: "[img:paper-a-q32.png] E = (optimistic + 4*most likely + pessimistic)/6 E = (2+(4*11)+14)/6 = 10 Thus: a) Is not correct b) Is not correct c) Is not correct d) Is correct"
     },
     {
       questionId: 33,
       correctAnswers: [0],
-      explanation: "Afterwards, TC 003 to satisfy priority and then TC 004, followed by TC 005. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q33.png] Afterwards, TC 003 to satisfy priority and then TC 004, followed by TC 005. Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 34,
       correctAnswers: [0],
-      explanation: "• Usability testing is in Q3 (1 – C) • Component testing is in Q1 (2 – A) • Functional testing is in Q2 (3 – B) • Reliability testing is in Q4 (4 – D) Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
+      explanation: "[img:paper-a-q34.png] • Usability testing is in Q3 (1 – C) • Component testing is in Q1 (2 – A) • Functional testing is in Q2 (3 – B) • Reliability testing is in Q4 (4 – D) Thus: a) Is correct b) Is not correct c) Is not correct d) Is not correct"
     },
     {
       questionId: 35,
       correctAnswers: [2],
-      explanation: "a) Is not correct. We do not accept the risk; concrete actions are proposed b) Is not correct. No contingency plans are proposed c) Is correct. The proposed actions are related to testing, which is a form of risk mitigation d) Is not correct. Risk is not transferred but mitigated"
+      explanation: "[img:paper-a-q35.png] a) Is not correct. We do not accept the risk; concrete actions are proposed b) Is not correct. No contingency plans are proposed c) Is correct. The proposed actions are related to testing, which is a form of risk mitigation d) Is not correct. Risk is not transferred but mitigated"
     },
     {
       questionId: 36,
@@ -195,7 +195,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 38,
       correctAnswers: [2],
-      explanation: "a) Is not correct. The expected result is “the application should accept the provided input and create the user”. The actual result is “The application hangs up after entering “Test input. $ä””. b) Is not correct. There is a reference to the test case and to the related requirement and it states that the defect is rejected. Also, the defect status would not be very helpful for the developers c) Is correct. We do not know in which test environment the anomaly was detected, and we also do not know which application (and its version) is affected d) Is not correct. The defect report states that the anomaly is urgent, that it is a global issue (i.e., many, if not all, test administration accounts are affected) and states the impact is high for business stakeholders"
+      explanation: "[img:paper-a-q38.png] a) Is not correct. The expected result is “the application should accept the provided input and create the user”. The actual result is “The application hangs up after entering “Test input. $ä””. b) Is not correct. There is a reference to the test case and to the related requirement and it states that the defect is rejected. Also, the defect status would not be very helpful for the developers c) Is correct. We do not know in which test environment the anomaly was detected, and we also do not know which application (and its version) is affected d) Is not correct. The defect report states that the anomaly is urgent, that it is a global issue (i.e., many, if not all, test administration accounts are affected) and states the impact is high for business stakeholders"
     },
     {
       questionId: 39,
@@ -292,12 +292,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 57,
       correctAnswers: [3],
-      explanation: "Considering each of the listed task descriptions: 1. The quality characteristics to be evaluated and the exit criteria are selected — Planning (C): Defining the review scope, purpose, work product to be reviewed, quality characteristics to be evaluated, areas of focus, exit criteria, supporting information such as standards, effort, and timeframes. 2. Everyone has access to the work product — Review initiation (B): Ensuring all participants have access to the work product and necessary resources, and clarifying their roles and responsibilities. 3. Anomalies are identified in the work product — Individual review (A): Evaluating the work product's quality, identifying and logging anomalies, recommendations, and questions using review techniques like checklist-based reviewing and scenario-based reviewing. 4. Anomalies are analyzed and discussed — Communication and analysis (D): Analyzing and discussing each anomaly, determining its status, ownership, and required actions, and making review decisions, normally in a meeting. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct. The correct match is: 1C, 2B, 3A, 4D."
+      explanation: "[img:paper-b-q17.png] Considering each of the listed task descriptions: 1. The quality characteristics to be evaluated and the exit criteria are selected — Planning (C): Defining the review scope, purpose, work product to be reviewed, quality characteristics to be evaluated, areas of focus, exit criteria, supporting information such as standards, effort, and timeframes. 2. Everyone has access to the work product — Review initiation (B): Ensuring all participants have access to the work product and necessary resources, and clarifying their roles and responsibilities. 3. Anomalies are identified in the work product — Individual review (A): Evaluating the work product's quality, identifying and logging anomalies, recommendations, and questions using review techniques like checklist-based reviewing and scenario-based reviewing. 4. Anomalies are analyzed and discussed — Communication and analysis (D): Analyzing and discussing each anomaly, determining its status, ownership, and required actions, and making review decisions, normally in a meeting. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct. The correct match is: 1C, 2B, 3A, 4D."
     },
     {
       questionId: 58,
       correctAnswers: [2],
-      explanation: "Considering each of the listed roles: 1. Scribe (or Recorder) — responsible for gathering feedback from reviewers and documenting review information, such as decisions made, and any new anomalies identified during the review meeting. (Records review information, such as decisions and new anomalies found during the review meeting — B). 2. Review Leader — responsible for overseeing the review process, such as selecting the review team members, scheduling review meetings, and ensuring that the review is completed successfully. (Takes overall responsibility for the review such as organizing when and where the review will take place — D). 3. Facilitator (or Moderator) — responsible for ensuring that the review meetings run effectively, including managing time, mediating discussions, and creating a safe environment where everyone can voice their opinions freely. (Ensures the effective running of review meetings and the setting up of a safe review environment — A). 4. Manager — responsible for deciding what needs to be reviewed and allocating resources, such as staff and time, for the review. (Decides what is to be reviewed and provides resources, such as staff and time for the review — C). a) Is not correct. b) Is not correct. c) Is correct. The correct match is: 1B, 2D, 3A, 4C. d) Is not correct."
+      explanation: "[img:paper-b-q18.png] Considering each of the listed roles: 1. Scribe (or Recorder) — responsible for gathering feedback from reviewers and documenting review information, such as decisions made, and any new anomalies identified during the review meeting. (Records review information, such as decisions and new anomalies found during the review meeting — B). 2. Review Leader — responsible for overseeing the review process, such as selecting the review team members, scheduling review meetings, and ensuring that the review is completed successfully. (Takes overall responsibility for the review such as organizing when and where the review will take place — D). 3. Facilitator (or Moderator) — responsible for ensuring that the review meetings run effectively, including managing time, mediating discussions, and creating a safe environment where everyone can voice their opinions freely. (Ensures the effective running of review meetings and the setting up of a safe review environment — A). 4. Manager — responsible for deciding what needs to be reviewed and allocating resources, such as staff and time, for the review. (Decides what is to be reviewed and provides resources, such as staff and time for the review — C). a) Is not correct. b) Is not correct. c) Is correct. The correct match is: 1B, 2D, 3A, 4C. d) Is not correct."
     },
     {
       questionId: 59,
@@ -307,22 +307,22 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 60,
       correctAnswers: [0],
-      explanation: "a) Is correct. 19 covers the 'no discount' partition, 20 covers the '50% discount' partition, and 30 covers the '10% discount' partition. These three values cover all three of the valid equivalence partitions. b) Is not correct. 11 and 12 cover the 'no discount' partition, while 20 covers the '50% discount' partition, so covering two of the three valid equivalence partitions. c) Is not correct. 1 covers the 'no discount' partition, while 10 and 50 cover the '10% discount' partition. The '50% discount' partition is not covered, so overall two of the three valid equivalence partitions are covered. d) Is not correct. 29 and 31 cover the 'no discount' partition, while 10 and 30 cover the '10% discount' partition. The '50% discount' partition is not covered, so overall two of the three valid equivalence partitions are covered."
+      explanation: "[img:paper-b-q20.png] a) Is correct. 19 covers the 'no discount' partition, 20 covers the '50% discount' partition, and 30 covers the '10% discount' partition. These three values cover all three of the valid equivalence partitions. b) Is not correct. 11 and 12 cover the 'no discount' partition, while 20 covers the '50% discount' partition, so covering two of the three valid equivalence partitions. c) Is not correct. 1 covers the 'no discount' partition, while 10 and 50 cover the '10% discount' partition. The '50% discount' partition is not covered, so overall two of the three valid equivalence partitions are covered. d) Is not correct. 29 and 31 cover the 'no discount' partition, while 10 and 30 cover the '10% discount' partition. The '50% discount' partition is not covered, so overall two of the three valid equivalence partitions are covered."
     },
     {
       questionId: 61,
       correctAnswers: [3],
-      explanation: "The domain for the password length has three equivalence partitions: passwords too short {0, 1, ..., 4, 5}, passwords OK {6, 7, ..., 11, 12}, passwords too long {13, 14, ...}. To achieve full coverage for 3-value BVA we need to test the following values: 0, 1, 4, 5, 6, 7, 11, 12, 13, 14. Since 2-value BVA is already covered, this means that we have already tested the passwords of length: 0, 5, 6, 12 and 13. This means that the additional lengths that need to be covered to move from 2-value to 3-value are: 1, 4, 7, 11 and 14. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct."
+      explanation: "[img:paper-b-q21.png] The domain for the password length has three equivalence partitions: passwords too short {0, 1, ..., 4, 5}, passwords OK {6, 7, ..., 11, 12}, passwords too long {13, 14, ...}. To achieve full coverage for 3-value BVA we need to test the following values: 0, 1, 4, 5, 6, 7, 11, 12, 13, 14. Since 2-value BVA is already covered, this means that we have already tested the passwords of length: 0, 5, 6, 12 and 13. This means that the additional lengths that need to be covered to move from 2-value to 3-value are: 1, 4, 7, 11 and 14. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct."
     },
     {
       questionId: 62,
       correctAnswers: [1],
-      explanation: "There are five columns in the decision table. Each test case covers one of them. TC1 and TC2 both cover Rule 4. TC3 and TC4 both cover Rule 2. TC5 covers Rule 5. So, these five test cases cover three out of five columns, achieving a coverage of (3/5)*100% = 60%. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-b-q22.png] There are five columns in the decision table. Each test case covers one of them. TC1 and TC2 both cover Rule 4. TC3 and TC4 both cover Rule 2. TC5 covers Rule 5. So, these five test cases cover three out of five columns, achieving a coverage of (3/5)*100% = 60%. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 63,
       correctAnswers: [2],
-      explanation: "Let us refer to the transitions with E1, ..., E5 as in the picture. The variable N denotes the number of elements currently stored. Each 'Add' event increases it by 1, and each 'Remove' event decreases it by 1. Notice, that when the 'Add' event occurs while being in the NOT FULL state, the state changes to FULL only if N=2. If N<2, the system stays in the NOT FULL state. If N=0, no 'Remove' action is possible. Similarly, if N=3, no 'Add' action is possible. Test a) can be written as E1, E3, E3, E2, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Test b) is infeasible, because after the first three 'Add' actions the system is in the FULL state and there is no valid transition going from FULL triggered by the 'Add' event. After the first three transitions only 60% of valid transitions coverage is achieved. Test c) can be written as E1, E2, E4, E5, E3 (so covers 5 out of 5 valid transitions, achieving 100% valid transitions coverage). Test d) can be written as E1, E2, E4, E5, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
+      explanation: "[img:paper-b-q23.png] Let us refer to the transitions with E1, ..., E5 as in the picture. The variable N denotes the number of elements currently stored. Each 'Add' event increases it by 1, and each 'Remove' event decreases it by 1. Notice, that when the 'Add' event occurs while being in the NOT FULL state, the state changes to FULL only if N=2. If N<2, the system stays in the NOT FULL state. If N=0, no 'Remove' action is possible. Similarly, if N=3, no 'Add' action is possible. Test a) can be written as E1, E3, E3, E2, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). Test b) is infeasible, because after the first three 'Add' actions the system is in the FULL state and there is no valid transition going from FULL triggered by the 'Add' event. After the first three transitions only 60% of valid transitions coverage is achieved. Test c) can be written as E1, E2, E4, E5, E3 (so covers 5 out of 5 valid transitions, achieving 100% valid transitions coverage). Test d) can be written as E1, E2, E4, E5, E4 (so covers 4 out of 5 valid transitions, achieving 80% valid transitions coverage). a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
     },
     {
       questionId: 64,
@@ -347,27 +347,27 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 68,
       correctAnswers: [1],
-      explanation: "a) Is not correct. The rule-oriented format includes formats like bullet point verification lists or tabulated forms of input-output mappings, explicitly showing the rules to be followed. Given/When/Then is a scenario-oriented format because it describes a scenario to be verified. b) Is correct. This is a Given/When/Then format, which is scenario-oriented. c) Is not correct. There is no 'product-oriented' format of acceptance criteria. d) Is not correct. There is no 'process-oriented' format of acceptance criteria."
+      explanation: "[img:paper-b-q28.png] a) Is not correct. The rule-oriented format includes formats like bullet point verification lists or tabulated forms of input-output mappings, explicitly showing the rules to be followed. Given/When/Then is a scenario-oriented format because it describes a scenario to be verified. b) Is correct. This is a Given/When/Then format, which is scenario-oriented. c) Is not correct. There is no 'product-oriented' format of acceptance criteria. d) Is not correct. There is no 'process-oriented' format of acceptance criteria."
     },
     {
       questionId: 69,
       correctAnswers: [3],
-      explanation: "a) Is not correct. The test case is related to viewing previous orders in the order history. b) Is not correct. The test case is related to viewing previous orders. c) Is not correct. The test case is related to viewing previous orders in the order history. d) Is correct. The test case is related to the registration process, which is not discussed in the user story. The user story is about viewing previous orders."
+      explanation: "[img:paper-b-q29.png] a) Is not correct. The test case is related to viewing previous orders in the order history. b) Is not correct. The test case is related to viewing previous orders. c) Is not correct. The test case is related to viewing previous orders in the order history. d) Is correct. The test case is related to the registration process, which is not discussed in the user story. The user story is about viewing previous orders."
     },
     {
       questionId: 70,
       correctAnswers: [0],
-      explanation: "a) Is correct. This is something that can (and should) be checked before the code is submitted to version control. b) Is not correct. This is something that can be checked after step (2) is performed, because merge conflict reporting can be done after the code is submitted and merged. c) Is not correct. This fits better as the entry criterion for step (3). d) Is not correct. This fits better as the exit criterion for step (3)."
+      explanation: "[img:paper-b-q30.png] a) Is correct. This is something that can (and should) be checked before the code is submitted to version control. b) Is not correct. This is something that can be checked after step (2) is performed, because merge conflict reporting can be done after the code is submitted and merged. c) Is not correct. This fits better as the entry criterion for step (3). d) Is not correct. This fits better as the exit criterion for step (3)."
     },
     {
       questionId: 71,
       correctAnswers: [1],
-      explanation: "The average development effort is $900,000 and the average test effort is $90,000 (calculated from the four projects). The average test-to-development effort ratio is 1:10 ($90,000 : $900,000), which means that historically, on average, the test effort is 10% of the development effort. So if the development effort is estimated to be $800,000, the estimated test effort is estimated as: 10% * $800,000 = 0.1 * $800,000 = $80,000. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-b-q31.png] The average development effort is $900,000 and the average test effort is $90,000 (calculated from the four projects). The average test-to-development effort ratio is 1:10 ($90,000 : $900,000), which means that historically, on average, the test effort is 10% of the development effort. So if the development effort is estimated to be $800,000, the estimated test effort is estimated as: 10% * $800,000 = 0.1 * $800,000 = $80,000. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 72,
       correctAnswers: [1],
-      explanation: "The logical dependencies mean that for each product you have to run SEARCH → VIEW → ADD before running ORDER. You can add more products (using the same flow), before you run ORDER. Based on this, TC1 or TC2 must be executed first, otherwise no progress can be made. The first priority should be given to VIEW and ADD product B, as its test cases (TC6, TC4) are assigned with higher priority. So, the first 3 tests to execute are TC2 → TC4 → TC6. Now we need to consider whether to run TC7 and then the entire flow for product A or run the TCs for product A first. If TC7 has lower priority than the other tests, they should be tested first. Therefore, the entire flow should be: TC2 → TC4 → TC6 → TC1 → TC3 → TC5 → TC7. a) Is not correct. TC1 must be executed before TC3. b) Is correct. c) Is not correct. As shown above, TC7 is the last to be executed. d) Is not correct. Product B must be executed before product A."
+      explanation: "[img:paper-b-q32.png] The logical dependencies mean that for each product you have to run SEARCH → VIEW → ADD before running ORDER. You can add more products (using the same flow), before you run ORDER. Based on this, TC1 or TC2 must be executed first, otherwise no progress can be made. The first priority should be given to VIEW and ADD product B, as its test cases (TC6, TC4) are assigned with higher priority. So, the first 3 tests to execute are TC2 → TC4 → TC6. Now we need to consider whether to run TC7 and then the entire flow for product A or run the TCs for product A first. If TC7 has lower priority than the other tests, they should be tested first. Therefore, the entire flow should be: TC2 → TC4 → TC6 → TC1 → TC3 → TC5 → TC7. a) Is not correct. TC1 must be executed before TC3. b) Is correct. c) Is not correct. As shown above, TC7 is the last to be executed. d) Is not correct. Product B must be executed before product A."
     },
     {
       questionId: 73,
@@ -377,7 +377,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 74,
       correctAnswers: [2],
-      explanation: "Considering each of the listed risks and their mitigations: 1. Long system responses (1) can be tested in performance testing (B). 2. Changes in consumers' preferences (2) are usually out of our control, so usually we accept this risk (A). 3. Flooding of the server room (3) can cause significant loss, so we should transfer the risk, e.g., by buying an insurance policy (D). 4. That patients above a certain age receive inaccurate reports (4) suggests a potential boundary problem, which can be effectively detected with test techniques like BVA (C). a) Is not correct. b) Is not correct. c) Is correct. The correct combinations of risk and mitigation are: 1B, 2A, 3D and 4C. d) Is not correct."
+      explanation: "[img:paper-b-q34.png] Considering each of the listed risks and their mitigations: 1. Long system responses (1) can be tested in performance testing (B). 2. Changes in consumers' preferences (2) are usually out of our control, so usually we accept this risk (A). 3. Flooding of the server room (3) can cause significant loss, so we should transfer the risk, e.g., by buying an insurance policy (D). 4. That patients above a certain age receive inaccurate reports (4) suggests a potential boundary problem, which can be effectively detected with test techniques like BVA (C). a) Is not correct. b) Is not correct. c) Is correct. The correct combinations of risk and mitigation are: 1B, 2A, 3D and 4C. d) Is not correct."
     },
     {
       questionId: 75,
@@ -397,12 +397,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 78,
       correctAnswers: [1],
-      explanation: "a) Is not correct. While the sentence is true, it does not provide much value for the developer. b) Is correct. From the test results it seems that the system ignores duplicates and sorts the list disregarding the repetitions. This is probably the cause of failures in TC3, TC4, TC5. Such information may help the developer to find the defect and fix it more efficiently. c) Is not correct. The system does not fail in sorting negative numbers. The problem is rather in disregarding duplicates. d) Is not correct. The test cases TC3, TC4 and TC5 fail, but we aren't aware that the test cases have any defects."
+      explanation: "[img:paper-b-q38.png] a) Is not correct. While the sentence is true, it does not provide much value for the developer. b) Is correct. From the test results it seems that the system ignores duplicates and sorts the list disregarding the repetitions. This is probably the cause of failures in TC3, TC4, TC5. Such information may help the developer to find the defect and fix it more efficiently. c) Is not correct. The system does not fail in sorting negative numbers. The problem is rather in disregarding duplicates. d) Is not correct. The test cases TC3, TC4 and TC5 fail, but we aren't aware that the test cases have any defects."
     },
     {
       questionId: 79,
       correctAnswers: [2],
-      explanation: "Considering each of the listed tool categories and their descriptions: A. Static testing tools — support the tester in performing reviews and static analysis (4). B. Tools supporting scalability and deployment standardization — For example, virtual machines, containerization tools (3). C. DevOps tools — support the DevOps delivery pipeline, workflow tracking, automated build process(es), continuous integration/continuous delivery (CI/CD) (1). D. Collaboration tools — facilitate communication (2). a) Is not correct. b) Is not correct. c) Is correct. The correct match is: 1C, 2D, 3B, 4A. d) Is not correct."
+      explanation: "[img:paper-b-q39.png] Considering each of the listed tool categories and their descriptions: A. Static testing tools — support the tester in performing reviews and static analysis (4). B. Tools supporting scalability and deployment standardization — For example, virtual machines, containerization tools (3). C. DevOps tools — support the DevOps delivery pipeline, workflow tracking, automated build process(es), continuous integration/continuous delivery (CI/CD) (1). D. Collaboration tools — facilitate communication (2). a) Is not correct. b) Is not correct. c) Is correct. The correct match is: 1C, 2D, 3B, 4A. d) Is not correct."
     },
     {
       questionId: 80,
@@ -434,7 +434,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 85,
       correctAnswers: [0],
-      explanation: "Considering each of the listed test activities and their output testware: A. Test analysis - prioritized test conditions (4) (e.g., acceptance criteria), and defect reports for defects identified in the test basis. B. Test design - prioritized test cases, test charters, coverage items (1), test data requirements, and test environment requirements. C. Test implementation - test procedures, automated test scripts, test suites, test data, test execution schedule (3), and test environment elements such as stubs, drivers, simulators, and service virtualizations. D. Test completion - test completion report, documented lessons learned, action items for improvement, and change requests (2) (as product backlog items). a) Is correct. The correct match is: 1B, 2D, 3C, 4A. b) Is not correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-c-q5.png] Considering each of the listed test activities and their output testware: A. Test analysis - prioritized test conditions (4) (e.g., acceptance criteria), and defect reports for defects identified in the test basis. B. Test design - prioritized test cases, test charters, coverage items (1), test data requirements, and test environment requirements. C. Test implementation - test procedures, automated test scripts, test suites, test data, test execution schedule (3), and test environment elements such as stubs, drivers, simulators, and service virtualizations. D. Test completion - test completion report, documented lessons learned, action items for improvement, and change requests (2) (as product backlog items). a) Is correct. The correct match is: 1B, 2D, 3C, 4A. b) Is not correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 86,
@@ -484,7 +484,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 95,
       correctAnswers: [3],
-      explanation: "Considering each of the listed example defects: i. Two different parts of the design specification disagree due to the complexity of the design — this is an example of a specification defect, which includes inconsistencies, ambiguities, contradictions, omissions, inaccuracies, and duplications, which can most easily be found by static testing. ii. A response time is too long and so makes users lose patience — this is an example of a response time defect, which can only be detected in practice by executing the program and measuring the response time, which can most easily be found by dynamic testing. iii. A path in the code cannot be reached during execution — this is an example of a coding defect, which includes variables with undefined values, undeclared variables, duplicated or unreachable code, and excessive code complexity, which can most easily be found by static testing. iv. A variable is declared but never subsequently used in the program — this is an example of a coding defect which can most easily be found by static testing. v. The amount of memory needed by the program to generate a report is too high — this is an example of a performance defect, which can only be detected in practice by executing the program and measuring the memory used, which can most easily be found by dynamic testing. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct. The correct match for static testing is i, iii, and iv."
+      explanation: "[img:paper-c-q15.png] Considering each of the listed example defects: i. Two different parts of the design specification disagree due to the complexity of the design — this is an example of a specification defect, which includes inconsistencies, ambiguities, contradictions, omissions, inaccuracies, and duplications, which can most easily be found by static testing. ii. A response time is too long and so makes users lose patience — this is an example of a response time defect, which can only be detected in practice by executing the program and measuring the response time, which can most easily be found by dynamic testing. iii. A path in the code cannot be reached during execution — this is an example of a coding defect, which includes variables with undefined values, undeclared variables, duplicated or unreachable code, and excessive code complexity, which can most easily be found by static testing. iv. A variable is declared but never subsequently used in the program — this is an example of a coding defect which can most easily be found by static testing. v. The amount of memory needed by the program to generate a report is too high — this is an example of a performance defect, which can only be detected in practice by executing the program and measuring the memory used, which can most easily be found by dynamic testing. a) Is not correct. b) Is not correct. c) Is not correct. d) Is correct. The correct match for static testing is i, iii, and iv."
     },
     {
       questionId: 96,
@@ -494,7 +494,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 97,
       correctAnswers: [1],
-      explanation: "Considering each of the listed review types: 1. Technical review — This type of review is performed by technically qualified reviewers and led by a moderator. The objectives are to gain consensus and make decisions on technical problems while also evaluating quality and building confidence in the work product, generating new ideas, motivating and enabling authors to improve, and detecting anomalies. 2. Informal review — The main objective is to detect anomalies. The process is not defined and does not require formal documented output. 3. Inspection — This is the most formal review type, and it follows the complete generic review process. The primary objective is to find the most anomalies. The author cannot act as the review leader or scribe. 4. Walkthrough — Led by the author, this type of review serves various objectives such as evaluating quality and building confidence in the work product, educating reviewers, gaining consensus, generating new ideas, motivating and enabling authors to improve, and detecting anomalies. A. Includes objectives such as gaining consensus, generating new ideas, and motivating authors to improve (Technical review - 1). B. Includes objectives such as educating reviewers, gaining consensus, generating new ideas and detecting anomalies (Walkthrough - 4). C. The main objective is detecting anomalies and it requires metrics collection to support process improvement (Inspection - 3). D. The main objective is detecting anomalies and it generates no formal documented output (Informal review - 2). a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-c-q17.png] Considering each of the listed review types: 1. Technical review — This type of review is performed by technically qualified reviewers and led by a moderator. The objectives are to gain consensus and make decisions on technical problems while also evaluating quality and building confidence in the work product, generating new ideas, motivating and enabling authors to improve, and detecting anomalies. 2. Informal review — The main objective is to detect anomalies. The process is not defined and does not require formal documented output. 3. Inspection — This is the most formal review type, and it follows the complete generic review process. The primary objective is to find the most anomalies. The author cannot act as the review leader or scribe. 4. Walkthrough — Led by the author, this type of review serves various objectives such as evaluating quality and building confidence in the work product, educating reviewers, gaining consensus, generating new ideas, motivating and enabling authors to improve, and detecting anomalies. A. Includes objectives such as gaining consensus, generating new ideas, and motivating authors to improve (Technical review - 1). B. Includes objectives such as educating reviewers, gaining consensus, generating new ideas and detecting anomalies (Walkthrough - 4). C. The main objective is detecting anomalies and it requires metrics collection to support process improvement (Inspection - 3). D. The main objective is detecting anomalies and it generates no formal documented output (Informal review - 2). a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 98,
@@ -509,27 +509,27 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 100,
       correctAnswers: [0],
-      explanation: "a) Is correct. Value '12' covers 'length incorrect, too few digits'. Value '1111' covers 'length correct' and 'number of different digits incorrect'. Value '1234' again covers 'length correct' and 'number of different digits correct'. Value '12345' covers 'length incorrect, too many digits'. b) Is not correct. All partitions are covered, however it only covers the lower side of 'length incorrect'. c) Is not correct. There are no values covering 'correct PIN'. d) Is not correct. There are no values covering 'number of different digits'."
+      explanation: "[img:paper-c-q20.png] a) Is correct. Value '12' covers 'length incorrect, too few digits'. Value '1111' covers 'length correct' and 'number of different digits incorrect'. Value '1234' again covers 'length correct' and 'number of different digits correct'. Value '12345' covers 'length incorrect, too many digits'. b) Is not correct. All partitions are covered, however it only covers the lower side of 'length incorrect'. c) Is not correct. There are no values covering 'correct PIN'. d) Is not correct. There are no values covering 'number of different digits'."
     },
     {
       questionId: 101,
       correctAnswers: [3],
-      explanation: "The equivalence partitions are: {..., 99, 100}, {101, 102, ..., 198, 199}, {200, 201, ...}. Thus, there are 4 boundary values, which are: 100, 101, 199 and 200. In 2-value BVA, for each boundary value there are two coverage items (the boundary value and its closest neighbor belonging to the adjacent partition). As the closest neighbors are also boundary values in the adjacent partition, then there are just four coverage items. a) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage. b) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage. c) Is not correct. Only 100 and 101 are valid coverage items for 2-value BVA, so we achieve 50% coverage. d) Is correct. 101, 199 and 200 are valid coverage items for 2-value BVA, so we achieve 75% coverage."
+      explanation: "[img:paper-c-q21.png] The equivalence partitions are: {..., 99, 100}, {101, 102, ..., 198, 199}, {200, 201, ...}. Thus, there are 4 boundary values, which are: 100, 101, 199 and 200. In 2-value BVA, for each boundary value there are two coverage items (the boundary value and its closest neighbor belonging to the adjacent partition). As the closest neighbors are also boundary values in the adjacent partition, then there are just four coverage items. a) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage. b) Is not correct. Only 100 and 200 are valid coverage items for 2-value BVA, so we achieve 50% coverage. c) Is not correct. Only 100 and 101 are valid coverage items for 2-value BVA, so we achieve 50% coverage. d) Is correct. 101, 199 and 200 are valid coverage items for 2-value BVA, so we achieve 75% coverage."
     },
     {
       questionId: 102,
       correctAnswers: [3],
-      explanation: "a) Is not correct. The combination (T, T, F) does not match any rule. This is an example of omission, not a contradiction. b) Is not correct. The combination (T, F, T) matches only one column, R2, so there is no contradiction. c) Is not correct. Both combinations (T, T, T) and (F, T, T) match only one column, R1, so there is no contradiction. d) Is correct. The combination (F, F, F) matches both R2 and R3, but R2 and R3 have different actions, so this shows a contradiction between R2 and R3."
+      explanation: "[img:paper-c-q22.png] a) Is not correct. The combination (T, T, F) does not match any rule. This is an example of omission, not a contradiction. b) Is not correct. The combination (T, F, T) matches only one column, R2, so there is no contradiction. c) Is not correct. Both combinations (T, T, T) and (F, T, T) match only one column, R1, so there is no contradiction. d) Is correct. The combination (F, F, F) matches both R2 and R3, but R2 and R3 have different actions, so this shows a contradiction between R2 and R3."
     },
     {
       questionId: 103,
       correctAnswers: [0],
-      explanation: "[img:paper-c-q23-exp.png] The following three transitions: \"REQUESTING → CONFIRMED\", \"WAITING LIST → CONFIRMED\", \"WAITING LIST → END\" cannot appear in the same test case, which suggests that at least three test cases are required. All the other transitions can appear in combination with one or more of these three transitions, so we need a minimum of three test cases. In fact, only three sequences are possible: TC1: START (Room request) → REQUESTING (Available) → CONFIRMED (Pay) → END. TC2: START (Room request) → REQUESTING (Not available) → WAITING LIST (Available) → CONFIRMED (Pay) → END. TC3: START (Room request) → REQUESTING (Not available) → WAITING LIST (Cancel) → END. a) Is correct. b) Is not correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-c-q23-exp.png] [img:paper-c-q23.png] The following three transitions: \"REQUESTING → CONFIRMED\", \"WAITING LIST → CONFIRMED\", \"WAITING LIST → END\" cannot appear in the same test case, which suggests that at least three test cases are required. All the other transitions can appear in combination with one or more of these three transitions, so we need a minimum of three test cases. In fact, only three sequences are possible: TC1: START (Room request) → REQUESTING (Available) → CONFIRMED (Pay) → END. TC2: START (Room request) → REQUESTING (Not available) → WAITING LIST (Available) → CONFIRMED (Pay) → END. TC3: START (Room request) → REQUESTING (Not available) → WAITING LIST (Cancel) → END. a) Is correct. b) Is not correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 104,
       correctAnswers: [2],
-      explanation: "In branch testing the coverage items are branches, which are represented by the edges of a control flow graph. There are 8 edges in the control flow graph. a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
+      explanation: "[img:paper-c-q24.png] In branch testing the coverage items are branches, which are represented by the edges of a control flow graph. There are 8 edges in the control flow graph. a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
     },
     {
       questionId: 105,
@@ -554,7 +554,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 109,
       correctAnswers: [3],
-      explanation: "a) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user. b) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user. c) Is not correct. There is no floor 5 described in the acceptance criteria. The test cases should not extend the scope of the user story. But even if we would like to perform negative testing, this test is not directly related to AC3. d) Is correct. This is the way we can check if a Special user can access floors which are accessible to a Regular user."
+      explanation: "[img:paper-c-q29.png] a) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user. b) Is not correct. We want to check that Special users have the rights of Regular users, so we need to test access rights for a Special user, not for a Regular user. c) Is not correct. There is no floor 5 described in the acceptance criteria. The test cases should not extend the scope of the user story. But even if we would like to perform negative testing, this test is not directly related to AC3. d) Is correct. This is the way we can check if a Special user can access floors which are accessible to a Regular user."
     },
     {
       questionId: 110,
@@ -564,12 +564,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 111,
       correctAnswers: [2],
-      explanation: "From the graph we have: A(4)=6 and A(3)=8 (the last two gray boxes). From the formula we obtain: E(5) = (3*A(4) + A(3)) / 4 = (3*6+8) / 4 = 26 / 4 = 6.5 person-days. a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
+      explanation: "[img:paper-c-q31.png] From the graph we have: A(4)=6 and A(3)=8 (the last two gray boxes). From the formula we obtain: E(5) = (3*A(4) + A(3)) / 4 = (3*6+8) / 4 = 26 / 4 = 6.5 person-days. a) Is not correct. b) Is not correct. c) Is correct. d) Is not correct."
     },
     {
       questionId: 112,
       correctAnswers: [0],
-      explanation: "We want to run test cases according to their priorities, but we also need to consider the dependencies. If we only consider priorities, we want to first run TC 5 and TC 7 (highest priority), then TC 1, TC 3, and TC 4, and finally TC 2 and TC 6 (lowest priority). However, in order to run TC 7, we need to first run TC 4. In order to run TC 5, we need to run TC 4 and TC 2, but TC 2 is blocked by TC 1, which should be run prior to TC 2. So, in order to run priority 1 test cases as early as possible, the first five test cases should be: TC 4 - TC 7 - TC 1 - TC 2 - TC 5. Next, we need to run TC 3, because it has higher priority than TC 6. Thus the full schedule will be TC 4 - TC 7 - TC 1 - TC 2 - TC 5 - TC 3 - TC 6. So, the sixth test case will be TC 3. a) Is correct. b) Is not correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-c-q32.png] We want to run test cases according to their priorities, but we also need to consider the dependencies. If we only consider priorities, we want to first run TC 5 and TC 7 (highest priority), then TC 1, TC 3, and TC 4, and finally TC 2 and TC 6 (lowest priority). However, in order to run TC 7, we need to first run TC 4. In order to run TC 5, we need to run TC 4 and TC 2, but TC 2 is blocked by TC 1, which should be run prior to TC 2. So, in order to run priority 1 test cases as early as possible, the first five test cases should be: TC 4 - TC 7 - TC 1 - TC 2 - TC 5. Next, we need to run TC 3, because it has higher priority than TC 6. Thus the full schedule will be TC 4 - TC 7 - TC 1 - TC 2 - TC 5 - TC 3 - TC 6. So, the sixth test case will be TC 3. a) Is correct. b) Is not correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 113,
@@ -599,7 +599,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 118,
       correctAnswers: [1],
-      explanation: "a) Is not correct. This is important, but not as important as test environment elements. b) Is correct. The important thing that is missing is the identification of the browser and device used for the testing. The browser and device information are important because such a defect can be browser- or device-specific. For example, a login button may work fine on one browser (or one version of a specific browser) but not on another. Therefore, the browser and device information can help the developers to reproduce the issue and find the root cause of the problem more quickly. c) Is not correct. The test object is identified (WebShop v0.99). d) Is not correct. The impact is included — this is severity (high)."
+      explanation: "[img:paper-c-q38.png] a) Is not correct. This is important, but not as important as test environment elements. b) Is correct. The important thing that is missing is the identification of the browser and device used for the testing. The browser and device information are important because such a defect can be browser- or device-specific. For example, a login button may work fine on one browser (or one version of a specific browser) but not on another. Therefore, the browser and device information can help the developers to reproduce the issue and find the root cause of the problem more quickly. c) Is not correct. The test object is identified (WebShop v0.99). d) Is not correct. The impact is included — this is severity (high)."
     },
     {
       questionId: 119,
@@ -651,7 +651,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 128,
       correctAnswers: [1],
-      explanation: "Considering each of the listed benefits and drawbacks of the independence of testing: i. Ideally, we want close collaboration between testers and developers, which is not increased by isolation. Thus, this is a disadvantage. ii. Testers and developers have varied backgrounds, technical viewpoints, and potential biases, allowing testers to usefully challenge assumptions made by stakeholders during system specification and implementation. Thus, this is an advantage. iii. The main disadvantage of independence of testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship. Thus, this is a disadvantage. iv. One of the disadvantages of independence of testing is that testers may become isolated from the development team, leading to developers feeling less accountable for quality. Thus, this is a disadvantage. v. The primary benefit of independence of testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases. a) Is not correct. b) Is correct. The list entries showing benefits are ii and v. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-d-q8.png] Considering each of the listed benefits and drawbacks of the independence of testing: i. Ideally, we want close collaboration between testers and developers, which is not increased by isolation. Thus, this is a disadvantage. ii. Testers and developers have varied backgrounds, technical viewpoints, and potential biases, allowing testers to usefully challenge assumptions made by stakeholders during system specification and implementation. Thus, this is an advantage. iii. The main disadvantage of independence of testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship. Thus, this is a disadvantage. iv. One of the disadvantages of independence of testing is that testers may become isolated from the development team, leading to developers feeling less accountable for quality. Thus, this is a disadvantage. v. The primary benefit of independence of testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases. a) Is not correct. b) Is correct. The list entries showing benefits are ii and v. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 129,
@@ -696,7 +696,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 137,
       correctAnswers: [1],
-      explanation: "The five listed descriptions and the corresponding review process activities are: 1. This describes part of the 'communication and analysis' activity. 2. This describes part of the 'fixing and reporting' activity. 3. This describes part of the 'individual review' activity. 4. This describes part of the 'planning' activity. 5. This describes part of the 'review initiation' activity. The generic review process from ISO/IEC 20246 comprises the following activities in this logical order: Planning (4), Review initiation (5), Individual review (3), Communication and analysis (1), Fixing and reporting (2). a) Is not correct. b) Is correct. The correct sequence of activities is: 4 - 5 - 3 - 1 - 2. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-d-q17.png] The five listed descriptions and the corresponding review process activities are: 1. This describes part of the 'communication and analysis' activity. 2. This describes part of the 'fixing and reporting' activity. 3. This describes part of the 'individual review' activity. 4. This describes part of the 'planning' activity. 5. This describes part of the 'review initiation' activity. The generic review process from ISO/IEC 20246 comprises the following activities in this logical order: Planning (4), Review initiation (5), Individual review (3), Communication and analysis (1), Fixing and reporting (2). a) Is not correct. b) Is correct. The correct sequence of activities is: 4 - 5 - 3 - 1 - 2. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 138,
@@ -711,7 +711,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 140,
       correctAnswers: [1, 4],
-      explanation: "There are two equivalence partitions that are not yet covered, which correspond to 'student discount' and 'pensioner discount'. a) Is not correct. CY - BY = 64, so these inputs correspond to the already covered 'no discount' partition. b) Is correct. CY - BY = 65, so these inputs correspond to a partition that is not yet covered ('pensioner discount'). c) Is not correct. CY - BY = -65, so these inputs correspond to the already covered 'error message' partition. d) Is not correct. CY - BY = 18, so these inputs correspond to the already covered 'no discount' partition. e) Is correct. CY - BY = 0, so these inputs correspond to a partition that is not yet covered ('student discount')."
+      explanation: "[img:paper-d-q20.png] There are two equivalence partitions that are not yet covered, which correspond to 'student discount' and 'pensioner discount'. a) Is not correct. CY - BY = 64, so these inputs correspond to the already covered 'no discount' partition. b) Is correct. CY - BY = 65, so these inputs correspond to a partition that is not yet covered ('pensioner discount'). c) Is not correct. CY - BY = -65, so these inputs correspond to the already covered 'error message' partition. d) Is not correct. CY - BY = 18, so these inputs correspond to the already covered 'no discount' partition. e) Is correct. CY - BY = 0, so these inputs correspond to a partition that is not yet covered ('student discount')."
     },
     {
       questionId: 141,
@@ -721,12 +721,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 142,
       correctAnswers: [0],
-      explanation: "Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions '66-year-old', 'unregistered' and 'no experience' match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase. b) Is not correct. The conditions '55-year-old', 'unregistered' and '2 years of experience' match rule R2, already covered by TC1. So adding this test case will not increase the coverage. c) Is not correct. The conditions '19-year-old', 'registered' and '5 years of experience' match rule R6, already covered by TC4. So adding this test case will not increase the coverage. d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5."
+      explanation: "[img:paper-d-q22.png] Test cases TC1, TC2, TC3 and TC4 cover, respectively, rules R2, R3, R7 and R6 in the decision table. a) Is correct. The conditions '66-year-old', 'unregistered' and 'no experience' match rule R4, which is not covered by the existing test cases, so after adding this test case, the decision table coverage will increase. b) Is not correct. The conditions '55-year-old', 'unregistered' and '2 years of experience' match rule R2, already covered by TC1. So adding this test case will not increase the coverage. c) Is not correct. The conditions '19-year-old', 'registered' and '5 years of experience' match rule R6, already covered by TC4. So adding this test case will not increase the coverage. d) Is not correct. The existing test cases cover only 4 out of 7 columns of the decision table. The coverage can be increased by adding test cases that cover yet uncovered columns, that is, R1, R4 and R5."
     },
     {
       questionId: 143,
       correctAnswers: [1],
-      explanation: "a) Is not correct. This sequence of five events covers 4 different valid transitions (both 'NotAvailable' events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions. b) Is correct. This sequence of five events covers 5 different transitions (the first 'Available' event corresponds to a transition between S1 and S2, and the second 'Available' event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage. c) Is not correct. This sequence of five events covers 3 different transitions (both 'Available' events correspond to the same transition from S1 to S2; both 'ChangeRoom' events correspond to the same transition from S2 to S1). d) Is not correct. This sequence of five events does not represent a feasible test case, because after 'Cancel' the system ends up in the End state and no further valid transitions can be executed."
+      explanation: "[img:paper-d-q23.png] a) Is not correct. This sequence of five events covers 4 different valid transitions (both 'NotAvailable' events correspond to the same transition between S1 and S3). This test case covers 4 out of 7 valid transitions. b) Is correct. This sequence of five events covers 5 different transitions (the first 'Available' event corresponds to a transition between S1 and S2, and the second 'Available' event corresponds to a transition between S3 and S2, so two different transitions are covered). This test case covers 5 out of 7 valid transitions and achieves the highest valid transitions coverage. c) Is not correct. This sequence of five events covers 3 different transitions (both 'Available' events correspond to the same transition from S1 to S2; both 'ChangeRoom' events correspond to the same transition from S2 to S1). d) Is not correct. This sequence of five events does not represent a feasible test case, because after 'Cancel' the system ends up in the End state and no further valid transitions can be executed."
     },
     {
       questionId: 144,
@@ -756,7 +756,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 149,
       correctAnswers: [0],
-      explanation: "a) Is correct. This test case is related to acceptance criteria 2 and 3, because we check if we can set price range (acceptance criterion 2) and if the results update dynamically after adjusting the price range filter (acceptance criterion 3). b) Is not correct. This test case is not related to any of the acceptance criteria. It checks if the filter dynamically sets the default minimum and maximum price range, and not that a customer can do it. c) Is not correct. This test case is not related to any of the acceptance criteria. It checks the currency exchange feature, which is not discussed in this user story. d) Is not correct. This test case is not related to any of the acceptance criteria. It checks the application's compatibility with different browsers, which is not discussed in this user story."
+      explanation: "[img:paper-d-q29.png] a) Is correct. This test case is related to acceptance criteria 2 and 3, because we check if we can set price range (acceptance criterion 2) and if the results update dynamically after adjusting the price range filter (acceptance criterion 3). b) Is not correct. This test case is not related to any of the acceptance criteria. It checks if the filter dynamically sets the default minimum and maximum price range, and not that a customer can do it. c) Is not correct. This test case is not related to any of the acceptance criteria. It checks the currency exchange feature, which is not discussed in this user story. d) Is not correct. This test case is not related to any of the acceptance criteria. It checks the application's compatibility with different browsers, which is not discussed in this user story."
     },
     {
       questionId: 150,
@@ -766,12 +766,12 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 151,
       correctAnswers: [0],
-      explanation: "Using the three-point estimation technique, the final estimate (E) is calculated as: E = (a + 4*m + b) / 6, where a is the most optimistic estimate, m is the most likely estimate, and b is the most pessimistic estimate. a) Is correct. In this case, the estimate for executing a single test case is: E = (1h + 4*3h + 8h) / 6 = 3.5 hours. So, the total time needed for the tester to execute 4 test cases is: 3.5h * 4 = 14 hours. b) Is not correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-d-q31.png] Using the three-point estimation technique, the final estimate (E) is calculated as: E = (a + 4*m + b) / 6, where a is the most optimistic estimate, m is the most likely estimate, and b is the most pessimistic estimate. a) Is correct. In this case, the estimate for executing a single test case is: E = (1h + 4*3h + 8h) / 6 = 3.5 hours. So, the total time needed for the tester to execute 4 test cases is: 3.5h * 4 = 14 hours. b) Is not correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 152,
       correctAnswers: [1],
-      explanation: "TC1 achieves the highest coverage (4/7 - Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
+      explanation: "[img:paper-d-q32.png] TC1 achieves the highest coverage (4/7 - Req1, Req3, Req4 and Req7), so should be executed first. Req2, Req5 and Req6 are still not covered. The next test case that achieves the highest additional coverage of the remaining requirements is TC3, covering 2 out of these 3 requirements (Req5 and Req6). So, TC3 should be executed as the second one. Now the only requirement still not covered is Req2, which is covered by TC4. Therefore, TC4 should be executed as the third test case. So, the last test case executed will be TC2. a) Is not correct. b) Is correct. c) Is not correct. d) Is not correct."
     },
     {
       questionId: 153,
@@ -801,7 +801,7 @@ export const answersData: Record<string, AnswerData[]> = {
     {
       questionId: 158,
       correctAnswers: [0],
-      explanation: "a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster. b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself. c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration."
+      explanation: "[img:paper-d-q38.png] a) Is correct. Adding this information allows the developer to use the same input data, so it is more likely they will be able to reproduce the failure quickly and so identify the defect faster. b) Is not correct. Adding the value of Priority will not help in reproducing the defect itself. c) Is not correct. Although some of this information may be of value, adding the memory dumps and database snapshots after each step will be too much, because most of these artefacts will contain useless information for the developer, and make the defect report less readable. d) Is not correct. The question was about helping the developer to reproduce the failure for a specific environment configuration."
     },
     {
       questionId: 159,
