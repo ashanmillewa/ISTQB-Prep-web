@@ -1,0 +1,19 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K10:08:04 AM [express] serving on port 5000
+[2m10:08:05 AM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Transform failed with 1 error:
+/home/runner/workspace/client/src/data/questions.ts:1815:87: ERROR: Expected "}" but found "X"
+  Plugin: [35mvite:esbuild[39m
+  File: [36m/home/runner/workspace/client/src/data/questions.ts[39m:1815:87
+[33m  
+  [33mExpected "}" but found "X"[33m
+  1813 |      {
+  1814 |        id: 152,
+  1815 |  ...s the traceability matrix from test cases to requirements. "X" means that a given test case covers the correspondi...
+       |                                                                 ^
+  1816 |        options: [
+  1817 |          "TC1",
+  [39m
+[1G[0K⠙[1G[0K
